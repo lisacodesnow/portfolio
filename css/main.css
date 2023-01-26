@@ -1,0 +1,67 @@
+html {
+  font-size: 16px; }
+
+body {
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column; }
+  body header {
+    background-color: blue; }
+    body header nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      padding: 0px; }
+  body main {
+    display: flex;
+    flex-direction: column; }
+    body main .content_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    body main .hero {
+      background-color: red; }
+      body main .hero h2 {
+        text-align: center; }
+      body main .hero img {
+        width: 100%; }
+    body main .about {
+      background-color: green; }
+      body main .about p {
+        text-align: center;
+        line-height: 1.25em; }
+    body main .skills {
+      background-color: brown; }
+      body main .skills h3 {
+        margin: 0px; }
+      body main .skills .lang_tools .languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body main .skills .lang_tools .languages ul {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin: 10px;
+          padding: 0px; }
+          body main .skills .lang_tools .languages ul li {
+            list-style: none; }
+      body main .skills .lang_tools .tools {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body main .skills .lang_tools .tools ul {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 0px;
+          margin: 10px; }
+          body main .skills .lang_tools .tools ul li {
+            list-style: none; }
+    body main .projects {
+      background-color: beige; }
+  body footer .contact {
+    background-color: palegreen; }
+
+/*body*/

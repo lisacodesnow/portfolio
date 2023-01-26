@@ -9,24 +9,117 @@
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li>Projects</li>
-				<li>Skills</li>
-				<li>About</li>
-				<li>Contact Me</li>
-			</ul>
-		</nav>
-	
+		
+			<nav>
+				<div class="content_container"> 
+				<ul>
+					<li>Projects</li>
+					<li>Skills</li>
+					<li>About</li>
+					<li>Contact Me</li>
+				</ul>
+				</div> <!--content_container-->
+			</nav>
+		
 	</header>
 	<main>
-		<section class="about_section"></section>
-		<section class="skills"></section>
-		<section class="projects"></section>
-	
+		
+		<section class="hero">
+			<div class="content_container"> 
+				<h1>Hey, I'm Lisa Thompson</h1>
+				<h2>Front End creator of attractive and interactive websites.
+				</h2>
+				<figure>
+					<img src="images/profile_pic.jpg" alt="profile picture">
+				</figure>
+			</div> <!--content_container-->
+		</section>
+		
+			
+		<section class="about">
+			<div class="content_container"> 
+				<p> I actually started coding and didn’t know I was coding with my good ole Myspace page. Fast forward several years, I went to school for graphic design, took several courses in web design, procured my design degree, but those courses gave me the coding bug. After COVID, I decided to take the leap and fully immerse myself in web development. 
+				</p>
+				
+				<p>I have an odd talent for guessing people’s age, within a one plus or minus range.
+				</p>
+			</div> <!--content_container-->
+		</section>
+		
+		<section class="skills">
+			<div class="content_container"> 
+				<h2>Developer Skills</h2>
+				<div class="lang_tools">
+					<div class="languages">
+						<h3>Languages</h3>
+						<ul>
+							<li> HTML</li>
+							<li> CSS</li>	
+							<li> SCSS</li>	
+							<li> Vanilla Javascript</li>	
+							<li> DOM Manipulation</li>	
+						</ul>
+					</div> <!--languages end-->
+
+					<div class="tools">
+						<h3>Dev Tools</h3>
+						<ul>
+							<li> Git</li>
+							<li> Github</li>	
+							<li> Chrome DevTools</li>	
+							<li> Dreamweaver</li>	
+							<li> Photoshop</li>	
+						</ul>
+					</div> <!--tools end-->
+				</div><!--lang_tools end-->
+			</div> <!--content_container-->
+		</section>
+		
+		<section class="projects">
+			<div class="content_container"> 
+				<h2>Projects</h2>
+				<div class="project_box">
+					<p class="project_info">
+						The unplugged retreat project is a three page responsive website. A Photoshop design comp was used as well as flexbox for the layout. With media queries this site adapts to mobile, tablet, and desktop screens.
+					</p>
+				</div>
+				<div class="project_box">
+					<p class="project_info">
+						The graduate testimonial website is a single page displaying positive reviews from students. This project utilizes flexbox,  grid, is responsive and is styled in various sizes. SCSS was helpful with assigning variables to frequently used colors to create a cohesive display and reduce syntax clutter.</p>
+				</div>
+				<div class="project_box">
+					<p class="project_info">
+						The Github Repo Gallery is a project that pulls data from my Github portfolio site. A gallery of repositories are created using  API’s to fetch the Github data and CSS.  The repositories can be searched through and once clicked can take the user to that github’s repository.
+					</p>
+				</div>
+				<div class="project_box">
+					<p class="project_info">
+						Guess Word is a word guessing game that requires players to guess letters, correctly or incorrectly, before they use their allotted guesses in order to win. This project uses vanilla Javascript to check the user’s input and match it with the correct word. The guessed words are fetched from a text file and used randomly.
+
+
+					</p>
+				</div>
+				<div class="project_box">
+					<p class="project_info">
+						The Name Tag Generator displays any name that a user adds. The name tags are created using JSX and stateful components. Lifecycle methods, mounting, unmounting, and updating, are also used to save a name tag once the screen is refreshed or closed then opened.
+					</p>
+				</div>
+			</div> <!--content_container-->
+		</section>
+		
 	</main>
 	<footer>
 		<section class="contact">
+			<div class="content_container">
+				<h2>Contact</h2>
+				<h3> Lisa Thompson</h3>
+				<p class="email"> llmt2007@aol.com</p>
+					<div class="social_media">
+						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"> LinkedIn </a>
+						<a href="https://github.com/lisacodesnow" target="_blank">Github</a>
+					</div>
+				
+			</div> <!--content_container-->
 		</section>
 	</footer>
 </body>
