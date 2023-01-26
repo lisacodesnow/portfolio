@@ -1,6 +1,9 @@
 html {
   font-size: 16px; }
 
+p, h1, h2, h3, h4 {
+  margin: 0px; }
+
 body {
   margin: 0px 50px;
   display: flex;
@@ -19,7 +22,8 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin: 20px; }
     body main .hero {
       background-color: red; }
       body main .hero h2 {
@@ -38,29 +42,87 @@ body {
       body main .skills .lang_tools .languages {
         display: flex;
         flex-direction: column;
-        align-items: center; }
-        body main .skills .lang_tools .languages ul {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          margin: 10px;
-          padding: 0px; }
-          body main .skills .lang_tools .languages ul li {
-            list-style: none; }
+        align-items: center;
+        /*ul{
+        	display: flex;
+        	align-items: center;
+        	flex-direction: column;
+        	margin: 10px;
+        	padding: 0px;
+        	li{
+        		list-style: none;
+        		border: 5px solid aqua;
+        		height: 50px;
+        		width: 100px;
+        		background-color: brown;
+        	}
+        } */ }
+        body main .skills .lang_tools .languages p {
+          border-color: aqua;
+          border-bottom-style: double;
+          width: 100%;
+          margin: 5px;
+          text-align: center; }
       body main .skills .lang_tools .tools {
         display: flex;
         flex-direction: column;
-        align-items: center; }
-        body main .skills .lang_tools .tools ul {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          padding: 0px;
-          margin: 10px; }
-          body main .skills .lang_tools .tools ul li {
-            list-style: none; }
+        align-items: center;
+        justify-content: center;
+        /*ul{
+        	display: flex;
+        	align-items: center;
+        	flex-direction: column;
+        	padding: 0px;
+        	margin: 10px;
+        	li{
+        		list-style: none;
+        	}
+        } */ }
+        body main .skills .lang_tools .tools p {
+          border-color: aqua;
+          border-bottom-style: double;
+          width: 100%;
+          margin: 5px;
+          text-align: center; }
     body main .projects {
       background-color: beige; }
+      body main .projects h2 {
+        margin: 80px 0px 20px; }
+      body main .projects .project_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body main .projects .project_box h3 {
+          text-align: center;
+          margin: 20px 0px 40px; }
+        body main .projects .project_box .project_info {
+          margin-bottom: 20px; }
+        body main .projects .project_box figure {
+          margin: 10px 0px; }
+          body main .projects .project_box figure img {
+            width: 100%;
+            box-shadow: 3px 3px 5px 3px black; }
+        body main .projects .project_box .project_skills,
+        body main .projects .project_box .project_tools {
+          display: flex;
+          width: 100%;
+          margin: 5px 0px; }
+          body main .projects .project_box .project_skills p,
+          body main .projects .project_box .project_tools p {
+            padding-left: 5px; }
+        body main .projects .project_box .live_page {
+          text-align: center;
+          border: 1px solid #DB2A2D;
+          border-radius: 20px;
+          padding: 10px;
+          width: 50%;
+          margin: 35px 0px;
+          background-color: #DB2A2D;
+          color: white; }
+        body main .projects .project_box .live_page:hover {
+          background-color: white;
+          color: #DB2A2D; }
   body footer .contact {
     background-color: palegreen; }
 

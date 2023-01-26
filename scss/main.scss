@@ -5,6 +5,10 @@ html{
 	font-size: 16px;
 }
 
+p, h1, h2, h3, h4{
+	margin: 0px;
+}
+
 body{
 	margin: 0px 50px;
 	display: flex;
@@ -34,6 +38,8 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 20px;
+		
 		}
 	
 	
@@ -70,7 +76,18 @@ main{
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				ul{
+				
+				p{
+					border-color: aqua;
+					border-bottom-style: double;
+					width: 100%;
+					//background-color: aqua;
+					margin: 5px;
+					text-align: center;
+					
+				}
+				
+				/*ul{
 					display: flex;
 					align-items: center;
 					flex-direction: column;
@@ -78,16 +95,31 @@ main{
 					padding: 0px;
 					li{
 						list-style: none;
+						border: 5px solid aqua;
+						height: 50px;
+						width: 100px;
+						background-color: brown;
 					}
-				}
+				} */
 			}
 			
 			.tools{
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				justify-content: center;
 				
-				ul{
+				p{
+					border-color: aqua;
+					border-bottom-style: double;
+					width: 100%;
+					//background-color: aqua;
+					margin: 5px;
+					text-align: center;
+					
+				}
+				
+				/*ul{
 					display: flex;
 					align-items: center;
 					flex-direction: column;
@@ -96,16 +128,66 @@ main{
 					li{
 						list-style: none;
 					}
-				}
+				} */
 			}
 		}
 	}
 	
 	.projects{
 		background-color: beige;
+	
+		h2{
+			margin: 80px 0px 20px;
+		}
+	
+	.project_box{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		h3{
+			text-align: center;
+			margin: 20px 0px 40px;
+		}
+		.project_info{
+			margin-bottom: 20px;
+		}
+		figure{
+			margin: 10px 0px;
+			
+			img{
+				width: 100%;
+				box-shadow: 3px 3px 5px 3px black;
+			}
+		}
+		.project_skills,
+		.project_tools{
+			display: flex;
+			width: 100%;
+			margin: 5px 0px;
+			
+			p{
+				padding-left: 5px;
+			}
+		}
+		.live_page{
+			text-align: center;
+			border:1px solid #DB2A2D;
+			border-radius: 20px;
+			padding: 10px;
+			width: 50%;
+			margin: 35px 0px;
+			background-color: #DB2A2D;
+			color: white;
+		}
+		.live_page:hover{
+			background-color: white;
+			color: #DB2A2D;
+			
+		}
 	}
-	
-	
+	}
 }
 footer{
 .contact{
