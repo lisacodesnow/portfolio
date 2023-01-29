@@ -1,23 +1,45 @@
 // Scss Document
 
+$off-white-primary: #F2F2F2;
+$yellow-green-secondary: #EFFAA0;
+$accent-brown: #B05404;
+$accent-red: #BF3604;
+
+$heading-font: 'Playfair Display', serif;
+$paragraph-font: 'Raleway', sans-serif;
 
 html{
 	font-size: 16px;
 }
 
-p, h1, h2, h3, h4{
+h1, h2, h3, h4{
 	margin: 0px;
+	font-family: $heading-font;
+}
+p,li{
+	font-family: $paragraph-font;
+	line-height: 1.50em;
+}
+h2{
+	color: $accent-red;
 }
 
 body{
-	margin: 0px 50px;
+	
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
+	background-color: $off-white-primary;
+	margin: 0px;
+	
 	
 
 header{
-	background-color: blue;
+	
 	nav{
+		margin-top: 40px;
+		padding: 0px 20px;
+		
 		ul{
 			display: flex;
 			list-style: none;
@@ -33,21 +55,35 @@ main{
 	display: flex;
 	flex-direction: column;
 	
+	
 	.content_container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 20px;
+		margin: 30px;
 		
 		}
 	
 	
 	.hero{
-		background-color: red;
-		h2{
-			text-align: center;
+		
+		
+		.intro{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			
+			h1{
+				margin: 20px 0px;
+				text-align: center;
+			}
+			p{
+				text-align: center;
+			}
 		}
+		
 		
 		img{
 			width: 100%;
@@ -57,19 +93,40 @@ main{
 	
 	
 	.about{
-		background-color: green;
+		background-color: $yellow-green-secondary;
+		padding: 40px 40px 250px 40px;
 		
+	
 		p{
 			text-align: center;
-			line-height: 1.25em;
+			color:$accent-red;
 		}
 		
 	}
 	.skills{
-		background-color: brown;
+		background-color: $off-white-primary;
+		
+		h2{
+			margin: 60px 0px 40px;
+		}
+
+		.slim_content_container{
+			background-color: $off-white-primary;
+			margin: 40px;
+			margin-top: -250px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid $yellow-green-secondary;
+			border-radius: 20px;
+			padding: 30px 0px;
+			box-shadow: 0px 3px 3px 0px #faf4a0;
+			color: black;
+		}
 		
 		h3{
-			margin: 0px;
+			margin: 20px;
 		}
 		.lang_tools{
 			.languages{
@@ -78,8 +135,7 @@ main{
 				align-items: center;
 				
 				p{
-					border-color: aqua;
-					border-bottom-style: double;
+					
 					width: 100%;
 					//background-color: aqua;
 					margin: 5px;
@@ -110,10 +166,8 @@ main{
 				justify-content: center;
 				
 				p{
-					border-color: aqua;
-					border-bottom-style: double;
+					
 					width: 100%;
-					//background-color: aqua;
 					margin: 5px;
 					text-align: center;
 					
@@ -134,7 +188,7 @@ main{
 	}
 	
 	.projects{
-		background-color: beige;
+		
 	
 		h2{
 			margin: 80px 0px 20px;
@@ -145,45 +199,53 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 0px 20px 60px;
 		
 		h3{
 			text-align: center;
-			margin: 20px 0px 40px;
+			margin: 30px 0px 30px;
+		}
+		
+		h4{
+			text-align: center;
 		}
 		.project_info{
 			margin-bottom: 20px;
+			text-align: center;
 		}
 		figure{
 			margin: 10px 0px;
 			
 			img{
 				width: 100%;
-				box-shadow: 3px 3px 5px 3px black;
+				box-shadow: 0px 3px 3px 0px $yellow-green-secondary; /*make all box shadows with same color*/
 			}
 		}
 		.project_skills,
 		.project_tools{
 			display: flex;
 			width: 100%;
-			margin: 5px 0px;
+		
+			justify-content: center;
+			align-items: center;
 			
 			p{
-				padding-left: 5px;
+				padding-left: 15px;
 			}
 		}
 		.live_page{
 			text-align: center;
-			border:1px solid #DB2A2D;
+			border:1px solid $accent-red;
 			border-radius: 20px;
 			padding: 10px;
 			width: 50%;
 			margin: 35px 0px;
-			background-color: #DB2A2D;
-			color: white;
+			background-color: $accent-red;
+			color: $off-white-primary;
 		}
 		.live_page:hover{
-			background-color: white;
-			color: #DB2A2D;
+			background-color: $off-white-primary;
+			color: $accent-red;
 			
 		}
 	}
@@ -191,7 +253,26 @@ main{
 }
 footer{
 .contact{
-		background-color: palegreen;
+	background-color: $yellow-green-secondary;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $accent-red;
+	h2,.find_me{
+		text-align: center;
+		margin: 30px 0px;
+	}
+	.email{
+		margin-top: 10px;
+	}
+	.social_media{
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		width: 100%;
+		
+		
+	}
 	}
 }
 

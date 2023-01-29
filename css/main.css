@@ -1,15 +1,26 @@
 html {
   font-size: 16px; }
 
-p, h1, h2, h3, h4 {
-  margin: 0px; }
+h1, h2, h3, h4 {
+  margin: 0px;
+  font-family: "Playfair Display", serif; }
+
+p, li {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.50em; }
+
+h2 {
+  color: #BF3604; }
 
 body {
-  margin: 0px 50px;
   display: flex;
-  flex-direction: column; }
-  body header {
-    background-color: blue; }
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F2F2F2;
+  margin: 0px; }
+  body header nav {
+    margin-top: 40px;
+    padding: 0px 20px; }
     body header nav ul {
       display: flex;
       list-style: none;
@@ -23,22 +34,44 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 20px; }
-    body main .hero {
-      background-color: red; }
-      body main .hero h2 {
+      margin: 30px; }
+    body main .hero .intro {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      body main .hero .intro h1 {
+        margin: 20px 0px;
         text-align: center; }
-      body main .hero img {
-        width: 100%; }
+      body main .hero .intro p {
+        text-align: center; }
+    body main .hero img {
+      width: 100%; }
     body main .about {
-      background-color: green; }
+      background-color: #EFFAA0;
+      padding: 40px 40px 250px 40px; }
       body main .about p {
         text-align: center;
-        line-height: 1.25em; }
+        color: #BF3604; }
     body main .skills {
-      background-color: brown; }
+      background-color: #F2F2F2; }
+      body main .skills h2 {
+        margin: 60px 0px 40px; }
+      body main .skills .slim_content_container {
+        background-color: #F2F2F2;
+        margin: 40px;
+        margin-top: -250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #EFFAA0;
+        border-radius: 20px;
+        padding: 30px 0px;
+        box-shadow: 0px 3px 3px 0px #faf4a0;
+        color: black; }
       body main .skills h3 {
-        margin: 0px; }
+        margin: 20px; }
       body main .skills .lang_tools .languages {
         display: flex;
         flex-direction: column;
@@ -58,8 +91,6 @@ body {
         	}
         } */ }
         body main .skills .lang_tools .languages p {
-          border-color: aqua;
-          border-bottom-style: double;
           width: 100%;
           margin: 5px;
           text-align: center; }
@@ -79,51 +110,67 @@ body {
         	}
         } */ }
         body main .skills .lang_tools .tools p {
-          border-color: aqua;
-          border-bottom-style: double;
           width: 100%;
           margin: 5px;
           text-align: center; }
-    body main .projects {
-      background-color: beige; }
-      body main .projects h2 {
-        margin: 80px 0px 20px; }
-      body main .projects .project_box {
+    body main .projects h2 {
+      margin: 80px 0px 20px; }
+    body main .projects .project_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 20px 60px; }
+      body main .projects .project_box h3 {
+        text-align: center;
+        margin: 30px 0px 30px; }
+      body main .projects .project_box h4 {
+        text-align: center; }
+      body main .projects .project_box .project_info {
+        margin-bottom: 20px;
+        text-align: center; }
+      body main .projects .project_box figure {
+        margin: 10px 0px; }
+        body main .projects .project_box figure img {
+          width: 100%;
+          box-shadow: 0px 3px 3px 0px #EFFAA0;
+          /*make all box shadows with same color*/ }
+      body main .projects .project_box .project_skills,
+      body main .projects .project_box .project_tools {
         display: flex;
-        flex-direction: column;
+        width: 100%;
         justify-content: center;
         align-items: center; }
-        body main .projects .project_box h3 {
-          text-align: center;
-          margin: 20px 0px 40px; }
-        body main .projects .project_box .project_info {
-          margin-bottom: 20px; }
-        body main .projects .project_box figure {
-          margin: 10px 0px; }
-          body main .projects .project_box figure img {
-            width: 100%;
-            box-shadow: 3px 3px 5px 3px black; }
-        body main .projects .project_box .project_skills,
-        body main .projects .project_box .project_tools {
-          display: flex;
-          width: 100%;
-          margin: 5px 0px; }
-          body main .projects .project_box .project_skills p,
-          body main .projects .project_box .project_tools p {
-            padding-left: 5px; }
-        body main .projects .project_box .live_page {
-          text-align: center;
-          border: 1px solid #DB2A2D;
-          border-radius: 20px;
-          padding: 10px;
-          width: 50%;
-          margin: 35px 0px;
-          background-color: #DB2A2D;
-          color: white; }
-        body main .projects .project_box .live_page:hover {
-          background-color: white;
-          color: #DB2A2D; }
+        body main .projects .project_box .project_skills p,
+        body main .projects .project_box .project_tools p {
+          padding-left: 15px; }
+      body main .projects .project_box .live_page {
+        text-align: center;
+        border: 1px solid #BF3604;
+        border-radius: 20px;
+        padding: 10px;
+        width: 50%;
+        margin: 35px 0px;
+        background-color: #BF3604;
+        color: #F2F2F2; }
+      body main .projects .project_box .live_page:hover {
+        background-color: #F2F2F2;
+        color: #BF3604; }
   body footer .contact {
-    background-color: palegreen; }
+    background-color: #EFFAA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BF3604; }
+    body footer .contact h2, body footer .contact .find_me {
+      text-align: center;
+      margin: 30px 0px; }
+    body footer .contact .email {
+      margin-top: 10px; }
+    body footer .contact .social_media {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      width: 100%; }
 
 /*body*/
