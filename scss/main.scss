@@ -275,23 +275,23 @@ footer{
 		
 	}
 
-.fun_fact{
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		
-		padding: 50px;
-		width: 40%;
-		align-items: center;
-		margin-top: -100px;
-		background-color: $off-white-primary;
-		border-radius: 20px;
-	}
+	
 
 
 	} /*contact end*/
+.fun_fact{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			padding: 50px;
+			width: 40%;
+			align-items: center;
+			margin-top: -100px;
+			background-color: $off-white-primary;
+			border-radius: 20px;
+		}	
 	
-	
-}
+} /*footer*/
 
 } /*body*/
