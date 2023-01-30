@@ -274,12 +274,12 @@ footer{
 		
 		
 	}
-	} /*contact end*/
-	
-	.fun_fact{
+
+.fun_fact{
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		
 		padding: 50px;
 		width: 40%;
 		align-items: center;
@@ -287,6 +287,11 @@ footer{
 		background-color: $off-white-primary;
 		border-radius: 20px;
 	}
+
+
+	} /*contact end*/
+	
+	
 }
 
 } /*body*/

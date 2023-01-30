@@ -175,15 +175,15 @@ body {
         margin-bottom: 50px;
         width: 100%;
         padding-bottom: 100px; }
-    body footer .fun_fact {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 50px;
-      width: 40%;
-      align-items: center;
-      margin-top: -100px;
-      background-color: #F2F2F2;
-      border-radius: 20px; }
+      body footer .contact .fun_fact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        width: 40%;
+        align-items: center;
+        margin-top: -100px;
+        background-color: #F2F2F2;
+        border-radius: 20px; }
 
 /*body*/
