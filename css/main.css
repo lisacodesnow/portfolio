@@ -139,7 +139,6 @@ body {
       body main .projects .project_box .project_tools {
         display: flex;
         width: 100%;
-        justify-content: center;
         align-items: center; }
         body main .projects .project_box .project_skills p,
         body main .projects .project_box .project_tools p {
@@ -156,21 +155,26 @@ body {
       body main .projects .project_box .live_page:hover {
         background-color: #F2F2F2;
         color: #BF3604; }
-  body footer .contact {
-    background-color: #EFFAA0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #BF3604; }
-    body footer .contact h2, body footer .contact .find_me {
-      text-align: center;
-      margin: 30px 0px; }
-    body footer .contact .email {
-      margin-top: 10px; }
-    body footer .contact .social_media {
+  body footer {
+    /*contact end*/ }
+    body footer .contact {
+      background-color: #EFFAA0;
       display: flex;
-      justify-content: space-around;
-      margin-bottom: 50px;
-      width: 100%; }
+      align-items: center;
+      justify-content: center;
+      color: #BF3604; }
+      body footer .contact h2, body footer .contact .find_me {
+        text-align: center;
+        margin: 30px 0px; }
+      body footer .contact .email {
+        margin-top: 10px; }
+      body footer .contact .social_media {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        width: 100%; }
+    body footer .fun_fact {
+      display: flex;
+      justify-content: center; }
 
 /*body*/

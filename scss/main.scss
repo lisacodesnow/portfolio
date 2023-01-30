@@ -225,8 +225,6 @@ main{
 		.project_tools{
 			display: flex;
 			width: 100%;
-		
-			justify-content: center;
 			align-items: center;
 			
 			p{
@@ -273,6 +271,11 @@ footer{
 		
 		
 	}
+	} /*contact end*/
+	
+	.fun_fact{
+		display: flex;
+		justify-content: center;
 	}
 }
 
