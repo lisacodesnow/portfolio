@@ -255,10 +255,12 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	color: $accent-red;
 	h2,.find_me{
 		text-align: center;
 		margin: 30px 0px;
+		
 	}
 	.email{
 		margin-top: 10px;
@@ -268,6 +270,7 @@ footer{
 		justify-content: space-around;
 		margin-bottom: 50px;
 		width: 100%;
+		padding-bottom: 100px;
 		
 		
 	}
@@ -276,6 +279,13 @@ footer{
 	.fun_fact{
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		padding: 50px;
+		width: 40%;
+		align-items: center;
+		margin-top: -100px;
+		background-color: $off-white-primary;
+		border-radius: 20px;
 	}
 }
 
