@@ -275,22 +275,26 @@ footer{
 		
 	}
 
-	
-
-
-	} /*contact end*/
-.fun_fact{
+	.fun_fact{
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
 
-			padding: 50px;
+			padding: 50px 50px 100px;
 			width: 40%;
 			align-items: center;
 			margin-top: -100px;
 			background-color: $off-white-primary;
 			border-radius: 20px;
+		
+		p{
+			text-align: center;
+		}
 		}	
+
+
+	} /*contact end*/
+
 	
 } /*footer*/
 
