@@ -194,6 +194,12 @@ main{
 		
 	} /*projects*/
 	
+	.skill_list{
+		display: flex;
+		h1{
+			color: blue;
+		}
+	}
 	
 	.portfolio_pieces{
 		
@@ -211,7 +217,10 @@ main{
 		}
 		
 	} /* portfolio pieces */
-		
+	
+
+	
+
 	.about{
 		.content_container{
 			margin: 30px;
@@ -222,6 +231,8 @@ main{
 			margin: 10px 0px;
 		}
 	}
+
+	
 } /*main end*/
 		
 		
@@ -239,7 +250,6 @@ footer{
 		justify-content: center;
 		align-items: center;
 		margin: 30px;
-		
 		
 	
 	color: $off-white-primary;
