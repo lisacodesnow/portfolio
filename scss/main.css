@@ -24,7 +24,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+<<<<<<< HEAD
   background-color: black;
+=======
+  background-color: red;
+>>>>>>> 842475f9404f4584a4f5af3c176f8bad40a5b627
   color: #F2F2F2;
   margin: 0px;
   /*header end*/
