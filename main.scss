@@ -50,8 +50,8 @@ header{
 		display: block;
 		
 		h1{
-			font-size: 1em;
-			width: 50%;
+			font-size: 4em;
+			width: 60%;
 		}
 		
 		#myLinks{
@@ -59,14 +59,17 @@ header{
 			  flex-direction: column;
 			  justify-content: center;
 			  align-items: center;
-				margin-top: 10px;
+				margin-top: 50px;
+				a{
+					font-size: 3em;
+				}
 		}
 		
 		a{
 			padding: 14px 16px;
 				color: white;
 			  text-decoration: none;
-			  font-size: 17px;
+			  font-size: .75em;
 			  display: block;
 		}
 		a:hover {
@@ -101,7 +104,7 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 30px;
+		margin: 60px;
 		
 		}
 	
@@ -118,7 +121,7 @@ main{
 			h1{
 				margin: 80px 30px;
 				text-align: center;
-				font-size: 2em;
+				font-size: 4em;
 				line-height: 1.5em;
 			}
 		}
@@ -126,12 +129,13 @@ main{
 	}			
 	
 	
-	
-	.projects{
+/* projects home-page*/
+	.projects_home_page{
 	
 		
-		h2{
+		h1{
 			margin: 0px 0px 80px;
+			font-size: 3em;
 		}
 	
 	.project_box{
@@ -140,8 +144,8 @@ main{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 20px;
-		width: 300px;
-		height: 300px;
+		width: 500px;
+		height: 500px;
 		position: relative;
 		
 		img{
@@ -192,14 +196,38 @@ main{
 			opacity: 1;
 		}
 		
-	} /*projects*/
-	
+	} /* projects home-page end*/
+
+
+	/*skills home-page*/
+	.skills_and_tools{
+		h1{
+			font-size: 3em;
+			margin-bottom: 50px;
+		}
 	.skill_list{
 		display: flex;
-		h1{
-			color: blue;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		
+		h2{
+			color: $off-white-primary;
+			border: 0px solid $accent-red;
+			margin: 20px;
+			border-radius:50%;
+			
+			padding: 70px;
+			background-color: $accent-red;
+			
+		}
+		h2:hover{
+			background-color: $off-white-primary;
+			color: red;
 		}
 	}
+	
+	}	
 	
 	.portfolio_pieces{
 		figure{
@@ -230,11 +258,11 @@ main{
 			color: red;
 		}
 		
-	} /* portfolio pieces */
+	} /* portfolio pieces end */
 	
 
 	
-
+/* about page */
 	.about{
 		.content_container{
 			margin: 30px;
@@ -266,36 +294,31 @@ footer{
 		margin: 30px;
 		color: $off-white-primary;
 	
-		h2{
-			margin: 0px;
+		h1{
+			font-size: 2em;
 		}
 		
-	}
+	
 	.email{
-		margin-top: 10px;
+		margin-top: 20px;
 		border-bottom: 1px solid white;
 		width: 100%;
 		text-align: center;
-		padding-bottom: 10px;
-		p{
-			margin: 0px;
-		}
+		padding-bottom: 50px;
+		font-size: 2em;
 	}
 	.social_media{
 		display: flex;
 		justify-content: space-around;
-		margin-bottom: 50px;
+		margin: 30px 0px 50px;
 		width: 50%;
 		
 		i{
 			color: white;
 		}
-	}
-	}
-	} /*contact end*/
+	}/*social media end*/
+	}/*content container end*/
+} /*contact end*/
+}/*footer end*/
 
-	
-} /*footer*/
-
- /*body end*/
-	
+}/*body end*/	
