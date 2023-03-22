@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Unplugged project</title>
-	<link rel="stylesheet" href="../scss/main.scss">
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../main.scss">
+	<link rel="stylesheet" href="../main.css">
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,11 +49,39 @@ function myFunction() {
 		<section class="projects">
 			<div class="content_container"> 
 				<div class="portfolio_pieces">
+					<div class="github_repo_gallery"></div>
 					<figure> <img src="../images/github_repo.png"  alt="project photo"> </figure>
-					<h3>Github Repo Gallery</h3>
+					<h1>Github Repo Gallery</h1>
 					<p class="project_info">
-						The Github Repo Gallery is a project that pulls data from my Github portfolio site. A gallery of repositories are created using  API’s to fetch the Github data and CSS.  The repositories can be searched through and once clicked can take the user to that github’s repository.
+						<h2>Overview</h2>
+						<p>The Github Repo Gallery is a project that pulls data from my Github portfolio site. A gallery of repositories are created using  API’s to fetch the Github data and CSS.  The repositories can be searched through and once clicked can take the user to that github’s repository.</p>
 					</p>
+					<div class=" challenge">
+						<h2>Challenge</h2>
+						<p>
+							A challenge I had was displaying the UI from the API’s.
+						</p>
+					</div>
+					<div class="solution">
+						<h2>Solution</h2>
+						<p>Using the async function and then passing the API results to another function that handles the UI is how I was able to display the UI from the API’s.
+
+							Before adding Javascript, the UI only displays elements from the html document. The CSS that’s needed is already written and will be added later by using the classList property in Javascript.
+							</p>
+							<p>There are two UI sections that need API’s, the user profile’s information and list of repositories.
+
+							</p>
+							<p>For the user profile the API is fetched with an async function. The results of the data are then passed to another function that handles the UI.
+
+								The data from the API is an object and the name, age, location, photo, and number of repositories are the properties used for the user profile.
+								
+								</p>
+							<p>For the list of repositories UI, the repositories API is fetched with a different async function.
+
+
+								The data results are passed to another function that handles the UI. The users repositories is looped through and added as a list that runs the length of the webpage
+								</p>
+					</div>
 					<div class="project_skills">
 						<h4>Skills:</h4>
 						<p> API, Vanilla Javascript, Flexbox, HTML5</p>
@@ -63,7 +91,8 @@ function myFunction() {
 						<p>Git, Github,Dreamweaver</p>
 					</div>
 					<h4 class="live_page">Live Page</h4>
-				</div>
+				</div> <!--github_gallery-->
+				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
 		
