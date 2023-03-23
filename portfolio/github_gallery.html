@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>Github Gallery</title>
-	<link rel="stylesheet" href="../main.scss">
-	<link rel="stylesheet" href="../main.css">
+	
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/portfolio.css">
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +32,7 @@ function myFunction() {
 					<h1> <a href="#home" class="name" > Lisa Thompson </a></h1>
 					
 				<div id="myLinks">
-					<a href="#projects">Projects</a>
-					<a href="#skills">Skills</a>
+					<a href="#portfolio">Portfolio</a>
 					<a href="#about">About</a>
 					<a href="Contact">Contact</a>
 					
@@ -49,8 +49,12 @@ function myFunction() {
 		<section class="individual_project_pages">
 			<div class="content_container"> 
 				<div class="portfolio_pieces">
+					<div class="back_to_portfolio">
+					<a href="#backtoportfolio" > back to portfolio </a>
+					</div>
 					<div class="github_repo_gallery"></div>
-					<figure> <img src="../images/github_repo.png"  alt="project photo"> </figure>
+					
+					<figure> <img src="../images/github_repo/github_repo_mainimage.png"  alt="project photo"> </figure>
 					<h1>Github Repo Gallery</h1>
 					<p class="project_info">
 						<h2>Overview</h2>
@@ -68,29 +72,38 @@ function myFunction() {
 
 							Before adding Javascript, the UI only displays elements from the html document. The CSS that’s needed is already written and will be added later by using the classList property in Javascript.
 							</p>
+
+							<figure> <img src="../images/github_repo/blank_github.png"  alt="project photo"> </figure>
 							<p>There are two UI sections that need API’s, the user profile’s information and list of repositories.
 
 							</p>
+							<figure> <img src="../images/github_repo/github_userprofile.png"  alt="project photo"> </figure>
 							<p>For the user profile the API is fetched with an async function. The results of the data are then passed to another function that handles the UI.
 
 								The data from the API is an object and the name, age, location, photo, and number of repositories are the properties used for the user profile.
 								
 								</p>
+							
+								<figure> <img src="../images/github_repo/github_first_async_function.png"  alt="project photo"> </figure>
 							<p>For the list of repositories UI, the repositories API is fetched with a different async function.
 
 
 								The data results are passed to another function that handles the UI. The users repositories is looped through and added as a list that runs the length of the webpage
 								</p>
+
+								<figure> <img src="../images/github_repo/github_second_async_function.png"  alt="project photo"> </figure>
 					</div>
 					<div class="project_skills">
-						<h4>Skills:</h4>
+						<h3>Skills:</h3>
 						<p> API, Vanilla Javascript, Flexbox, HTML5</p>
 					</div>
 					<div class="project_tools">
-						<h4> Tools:</h4>
+						<h3> Tools:</h3>
 						<p>Git, Github,Dreamweaver</p>
 					</div>
-					<h4 class="live_page">Live Page</h4>
+					<div class="live_page">
+					<a href="#livepage">Live Page</a>
+					</div>
 				</div> <!--github_gallery-->
 				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
@@ -101,13 +114,13 @@ function myFunction() {
 		<section class="contact">
 			<div class="content_container">
 				
-				<h3> Lisa Thompson</h3>
+				<h1> Lisa Thompson</h1>
 				<p class="email"> llmt2007@aol.com</p>
 				
 					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " ></i></a>
+						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
 						 
-						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-2x " ></i>
+						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-4x " ></i>
 					</div>
 				
 			</div> <!--content_container-->

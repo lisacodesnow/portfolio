@@ -150,18 +150,16 @@ main{
 		
 		img{
 				
-				opacity: 1;
+			  opacity: 1;
 			  display: block;
-			 
 			  transition: .5s ease;
 			  backface-visibility: hidden;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				
-				
-				
+			  width: 100%;
+			  height: 100%;
+			  object-fit: cover;
+
 			} /*img end*/		
+	
 		
 		.middle_text{
 			
@@ -229,38 +227,6 @@ main{
 	
 	}	
 	
-	.portfolio_pieces{
-		figure{
-			padding: 20px 0px;
-		}
-		h1{
-			font-size: 4em;
-			padding:20px 0px;
-		}
-		h2{
-			margin: 0px;
-			text-decoration: underline;
-		}
-		p{
-			margin: 40px 0px;
-		}
-		
-		.live_page{
-			
-			padding: 20px;
-			border-radius: 20px;
-			background-color: red;
-			text-align: center;
-		}
-		
-		.live_page:hover{
-			background-color: $off-white-primary;
-			color: red;
-		}
-		
-	} /* portfolio pieces end */
-	
-
 	
 /* about page */
 	.about{
@@ -276,14 +242,7 @@ main{
 
 	
 } /*main end*/
-		
-		
-		
-			
-			
-		
 	
-
 footer{
 .contact{
 	.content_container{
