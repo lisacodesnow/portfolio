@@ -42,7 +42,7 @@ body header nav h1 {
   width: 60%;
 }
 body header nav #myLinks {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ body header nav #myLinks {
 body header nav #myLinks a {
   font-size: 3em;
 }
-body header nav a {
+body header nav a, body header nav i {
   padding: 14px 16px;
   color: white;
   text-decoration: none;
@@ -59,6 +59,9 @@ body header nav a {
   display: block;
 }
 body header nav a:hover {
+  color: red;
+}
+body header nav i:hover {
   color: red;
 }
 body header nav .icon {
@@ -211,3 +214,18 @@ body footer .contact .content_container .social_media i {
 }
 
 /*body end*/
+@media screen and (min-width: 800px) {
+  body {
+    background-color: #B05404;
+  }
+  body #myLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  body #myLinks a {
+    font-size: 3em;
+  }
+}

@@ -55,7 +55,7 @@ header{
 		}
 		
 		#myLinks{
-				display: flex;
+				display: none;
 			  flex-direction: column;
 			  justify-content: center;
 			  align-items: center;
@@ -65,7 +65,7 @@ header{
 				}
 		}
 		
-		a{
+		a, i{
 			padding: 14px 16px;
 				color: white;
 			  text-decoration: none;
@@ -78,7 +78,12 @@ header{
 			
 		}
 		
-		
+		i:hover {
+		 
+			color: $accent-red;
+			  
+		  }
+		  
 		.icon{
 			 background: black;
 			  display: block;
@@ -281,3 +286,24 @@ footer{
 }/*footer end*/
 
 }/*body end*/	
+
+@media screen and (min-width: 800px) {
+
+	body{
+		background-color: #B05404;
+
+		#myLinks{
+			display: flex;
+		  flex-direction: row;
+		  justify-content: center;
+		  align-items: center;
+			margin-top: 50px;
+			a{
+				font-size: 3em;
+			}
+	}
+
+	
+	}
+	
+}
