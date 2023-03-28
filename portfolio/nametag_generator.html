@@ -1,24 +1,16 @@
 <!doctype html>
 <html>
 <head>
-	<title>Unplugged project</title>
-	<link rel="stylesheet" href="../main.scss">
-	<link rel="stylesheet" href="../main.css">
+	<title>Nametag Generator</title>
+	
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/portfolio.css">
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
-	<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-}
-</script>
+	
 <meta charset="utf-8">
 
 </head>
@@ -26,44 +18,84 @@ function myFunction() {
 <body>
 	<header>
 		
-			<nav>
+		<nav>
+			
+				 <a href="../index.html" class="name" > Lisa Thompson </a>
 				
-					<h1> <a href="#home" class="name" > Lisa Thompson </a></h1>
-					
-				<div id="myLinks">
-					<a href="#projects">Projects</a>
-					<a href="#skills">Skills</a>
-					<a href="#about">About</a>
-					<a href="Contact">Contact</a>
-					
-				</div>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    			<i class="fa fa-bars"></i>
-  				</a>
+			<div id="myLinks">
+				<a href="../index.html">Portfolio</a>
+				<a href="../about/index.html">About</a>
+				<a href="../contact/index.html">Contact</a>
 				
-			</nav>
-		
-	</header>
+			</div>
+			
+		</nav>
+	
+</header>
 	<main>
 
-		<section class="projects">
+		<section class="individual_project_pages">
 			<div class="content_container"> 
 				<div class="portfolio_pieces">
-					<figure><img src="../images/nametag_generator.png"  alt="project photo"></figure>
-					<h3>Name Tag Generator</h3>
+					<div class="back_to_portfolio">
+					<a href="../index.html" > back to portfolio </a>
+					</div>
+					<figure> <img src="../images/nametag_generator/nametag_generator_mainimage.png"  alt="project photo"> </figure>
+					<h1>Nametag Generator</h1>
 					<p class="project_info">
-						The Name Tag Generator displays any name that a user adds. The name tags are created using JSX and stateful components. Lifecycle methods, mounting, unmounting, and updating, are also used to save a name tag once the screen is refreshed or closed then opened.
-					</p>
+						<h2>Overview</h2>
+						<p>The Name Tag Generator is an application that displays any name a user adds. The name tags are created using JSX and stateful components. Lifecycle methods, mounting, unmounting, and updating, are also used to save a name tag once the screen is refreshed or closed then opened.
+						</p>
+					<div class=" challenge">
+						<h2>Challenge</h2>
+						<p>
+							
+							The challenge I had was using props effectively to manage data flow.
+
+						</p>
+					</div>
+					<div class="solution">
+						<h2>Solution</h2>
+						<p>Understanding the component tree and breaking the project down into presentational and container components is how I learned to use props effectively to manage data flow.<br>
+
+							<br>A component tree is a hierarchy of React components that help to render UI.<br>
+							
+							<br>First I decompose the UI and break the static image of the application into presentational and container components. While breaking down the components I also name them.
+						</p>							
+
+							<figure> <img src="../images/nametag_generator/nametag_generator_presentational_container_components.png"  alt="project photo"> </figure>
+							<p>Presentational components handle rendering logic, how the UI looks. These components receive data in the form of props to show in JSX. 
+							</p>
+							<figure> <img src="../images/nametag_generator/nametag_generator_receiving_props.png"  alt="project photo"> </figure>
+							<p>Container components are stateful components that handle and update the data model. Its concern is how data is used and passes props for the presentational components to render.
+							</p>
+								<figure> <img src="../images/nametag_generator/nametag_generator_app_container_component.png"  alt="project photo"> </figure>
+							<p>My UserInput and NameTagList UI’s are going to change due to user interaction and will need data passed to them from the App component which updates and passes the data as props.
+
+							</p>
+
+								<figure> <img src="../images/nametag_generator/nametag_generator_nametaglist_UI.png"  alt="project photo"> </figure>
+							
+							<p>
+								I simply see the stateful components as the parent container and presentational components as the children and even grandchildren containers.<br> 
+								<br>Understanding how the application needs the data and seeing where it originates from makes passing props easier for me.
+								</p>
+					</div>
 					<div class="project_skills">
-						<h4>Skills:</h4>
-						<p> React, ES6, JSX, Managaing Data Flow</p>
+						<h2>Skills</h2>
+						<p> React, ES6, JSX, Managing data flow</p>
 					</div>
 					<div class="project_tools">
-						<h4> Tools:</h4>
-						<p>Git, Github,Dreamweaver</p>
+						<h2> Tools</h2>
+						<p>Git, Github, Dreamweaver</p>
 					</div>
-					<h4 class="live_page">Live Page</h4>
-				</div>
+					<div class="live_page">
+					<a href="
+					https://codesandbox.io/s/completed-name-tag-project-kt8qd3
+					">Live Page</a>
+					</div>
+				</div> <!--github_gallery-->
+				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
 		
@@ -76,15 +108,14 @@ function myFunction() {
 				<p class="email"> llmt2007@aol.com</p>
 				
 					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " ></i></a>
+						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
 						 
-						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-2x " ></i>
+						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
 					</div>
 				
 			</div> <!--content_container-->
 			
 		</section>
-		
 	</footer>
 </body>
 </html>

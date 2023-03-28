@@ -6,21 +6,25 @@ $accent-red: red;
 $heading-font: 'Playfair Display', serif;
 $paragraph-font: 'Raleway', sans-serif;
 
-.back_to_portfolio{
-margin-bottom: 100px;
-    a{
-    text-decoration: none; 
-    color:$off-white-primary;  
-}
-
-a:hover{
-    
-    color: red;
-}
-         
-}
-
    .portfolio_pieces{
+        .back_to_portfolio{
+        margin-bottom: 100px;
+            a{
+            text-decoration: none; 
+            color:$off-white-primary;  
+        }
+
+        a:hover{
+            
+            color: red;
+        }
+                
+        }
+
+        li{
+            font-size: 1.5em;
+        }
+
                 figure{
                     padding: 20px 0px;
                 }
@@ -40,7 +44,8 @@ a:hover{
                 }
                 p{
                     margin: 40px 0px;
-                    line-height: 2.5em;
+                    line-height: 1.5em;
+                    font-size: 1.5em;
                 }
                 
                 .live_page{
@@ -54,7 +59,7 @@ a:hover{
                        
                         text-decoration: none;
                        color: $off-white-primary;
-                       font-size: 2em;
+                       font-size: 3em;
                     }
                     
                    

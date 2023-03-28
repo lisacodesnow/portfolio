@@ -43,53 +43,31 @@ header{
 	
 	nav{
 		
-		margin: 40px 30px;
+		margin:60px;
 		
 		background-color: black;
-		position: relative;
-		display: block;
+		display: flex;
+		justify-content: space-between;
 		
-		h1{
-			font-size: 4em;
-			width: 60%;
-		}
 		
 		#myLinks{
-				display: none;
-			  flex-direction: column;
-			  justify-content: center;
+			display: flex;
+			justify-content: space-evenly;
 			  align-items: center;
-				margin-top: 50px;
-				a{
-					font-size: 3em;
-				}
+			  width: 40%;
+				
+				
 		}
-		
-		a, i{
-			padding: 14px 16px;
-				color: white;
+		a{
+					font-size: 2em;
+					color: white;
 			  text-decoration: none;
-			  font-size: .75em;
-			  display: block;
-		}
+				}
+		
 		a:hover {
 		 
 		  color: $accent-red;
 			
-		}
-		
-		i:hover {
-		 
-			color: $accent-red;
-			  
-		  }
-		  
-		.icon{
-			 background: black;
-			  display: block;
-			  position: absolute;
-			  right: 0;
-			  top: 0;
 		}
 		
 		
@@ -124,7 +102,7 @@ main{
 			align-items: center;
 			
 			h1{
-				margin: 80px 30px;
+				margin: 40px 30px;
 				text-align: center;
 				font-size: 4em;
 				line-height: 1.5em;
@@ -137,6 +115,11 @@ main{
 /* projects home-page*/
 	.projects_home_page{
 	
+		a{
+			font-size: 1em;
+			color: white;
+	  text-decoration: none;
+		}
 		
 		h1{
 			margin: 0px 0px 80px;
@@ -191,13 +174,14 @@ main{
 		
 		} /* project box*/
 		
+		.project_box:hover .middle_text{
+			opacity: 1;
+		}
 		.project_box:hover img{
 			opacity: .2;
 		}
 		
-		.project_box:hover .middle_text{
-			opacity: 1;
-		}
+		
 		
 	} /* projects home-page end*/
 
@@ -287,7 +271,7 @@ footer{
 
 }/*body end*/	
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
 
 	body{
 		background-color: #B05404;
@@ -306,4 +290,4 @@ footer{
 	
 	}
 	
-}
+}*/

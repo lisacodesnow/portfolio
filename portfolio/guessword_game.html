@@ -1,24 +1,16 @@
 <!doctype html>
 <html>
 <head>
-	<title>Unplugged project</title>
-	<link rel="stylesheet" href="../main.scss">
-	<link rel="stylesheet" href="../main.css">
+	<title>Guess the Word</title>
+	
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/portfolio.css">
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
-	<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-}
-</script>
+	
 <meta charset="utf-8">
 
 </head>
@@ -26,44 +18,90 @@ function myFunction() {
 <body>
 	<header>
 		
-			<nav>
+		<nav>
+			
+				 <a href="../index.html" class="name" > Lisa Thompson </a>
 				
-					<h1> <a href="#home" class="name" > Lisa Thompson </a></h1>
-					
-				<div id="myLinks">
-					<a href="#projects">Projects</a>
-					<a href="#skills">Skills</a>
-					<a href="#about">About</a>
-					<a href="Contact">Contact</a>
-					
-				</div>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    			<i class="fa fa-bars"></i>
-  				</a>
+			<div id="myLinks">
+				<a href="../index.html">Portfolio</a>
+				<a href="../about/index.html">About</a>
+				<a href="../contact/index.html">Contact</a>
 				
-			</nav>
-		
-	</header>
+			</div>
+			
+		</nav>
+	
+</header>
 	<main>
 
-		<section class="projects">
+		<section class="individual_project_pages">
 			<div class="content_container"> 
 				<div class="portfolio_pieces">
-					<figure><img src="../images/guess_the_word.png"  alt="project photo"></figure>
-					<h3>Guess the Word</h3>
+					<div class="back_to_portfolio">
+					<a href="../index.html" > back to portfolio </a>
+					</div>
+					
+					<figure> <img src="../images/guess_the_word/guess_the_word_mainimage.png"  alt="project photo"> </figure>
+					<h1>Guess the Word</h1>
 					<p class="project_info">
-						Guess the Word is a word guessing game that requires players to guess letters, correctly or incorrectly, before they use their allotted guesses in order to win. This project uses vanilla Javascript to check the user’s input and match it with the correct word. The guessed words are fetched from a text file and used randomly.
+						<h2>Overview</h2>
+						<p>Guess Word is a word guessing game that requires players to guess letters, correctly or incorrectly, before they use their allotted guesses in order to win. This project uses vanilla Javascript to check the user’s input and match it with the correct word. The guessed words are fetched from a text file and used randomly.</p>
 					</p>
+					<div class=" challenge">
+						<h2>Challenge</h2>
+						<p>
+							This is one of my first Javascript projects and knowing what to code and when can be confusing. The challenge I had was decomposing the project into sections for a clearer understanding on how to tackle the project.
+						</p>
+					</div>
+					<div class="solution">
+						<h2>Solution</h2>
+						<p>Understanding how the game works and knowing what UI changes when the game is being played is how I was able to decompose the project into clearer sections.<br>
+
+							<br>Decomposing, or breaking down the UI that changes was a good starting point for me to know what to code. I then broke those sections further down into functions that work for the desired outcome of the game.<br>
+							
+							<br>The first thing I did was analyze the UI that changes when a player inputs a letter. 
+							</p>
+
+							<figure> <img src="../images/guess_the_word/guess_the_word_player_input.png"  alt="project photo"> </figure>
+							<p>When the letters inputted and the player hits the guess button the following parts change:
+								<ul>
+									<li>Message to user that displays if the correct letter was guessed</li><br>
+									<li>The word in progress that is the word being guessed</li><br>
+									<li>Remaining guesses that the player has to either win or lose</li><br>
+									<li>Guessed letters so the player wont input the same letter</li><br>
+									<li>Text input where the player enters the letter</li>
+								</ul>
+							</p>
+							<figure> <img src="../images/guess_the_word/guess_the_word_changinig_UI.png"  alt="project photo"> </figure>
+							<p>
+								And then once the game is over and regardless if you won or loss the following parts also change:
+								<ul>
+								<li> Congrats Message if the correct word is guessed</li><br>
+								<li>Play Again button appears</li>
+								</ul>
+								</p>
+							
+								<figure> <img src="../images/guess_the_word/guess_the_word_play_again.png"  alt="project photo"> </figure>
+							<p>Tackling any project can be overwhelming so having a strategy that outlines clear steps I need to take allows me to code a successful application.
+							</p>
+
+								
+					</div>
 					<div class="project_skills">
-						<h4>Skills:</h4>
-						<p> Vanilla Javascript, Manipulating the DOM, CSS, HTML5</p>
+						<h2>Skills</h2>
+						<p> Vanilla Javascript, Manipulating the DOM, HTML 5, CSS</p>
 					</div>
 					<div class="project_tools">
-						<h4> Tools:</h4>
-						<p>Git, Github,Dreamweaver</p>
+						<h2> Tools</h2>
+						<p>Git, Github, Dreamweaver</p>
 					</div>
-					<h4 class="live_page">Live Page</h4>
-				</div>
+					<div class="live_page">
+					<a href="
+					https://lisacodesnow.github.io/guess-the-word/
+					">Live Page</a>
+					</div>
+				</div> <!--github_gallery-->
+				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
 		
@@ -76,15 +114,14 @@ function myFunction() {
 				<p class="email"> llmt2007@aol.com</p>
 				
 					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-2x " ></i></a>
+						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
 						 
-						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-2x " ></i>
+						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
 					</div>
 				
 			</div> <!--content_container-->
 			
 		</section>
-		
 	</footer>
 </body>
 </html>

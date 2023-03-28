@@ -12,17 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--<script src="./js/script.js" defer></script> -->
-	<script>
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-}
-</script>
+	
 	
 </head>
 
@@ -31,18 +21,14 @@ function myFunction() {
 		
 			<nav>
 				
-					<h1 class="name"> <a href="#home" > Lisa Thompson </a></h1>
+					 <a href="./index.html" class="name" > Lisa Thompson </a>
 					
 				<div id="myLinks">
-					<a href="#about">About</a>
-					<a href="Contact">Contact</a>
+					<a href="./about/index.html">About</a>
+					<a href="./contact/index.html">Contact</a>
 					
 				</div>
-				<div class="hamburger_menu">
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    			<i class=" fa fa-bars fa-4x"></i>
-  				</a>
-				</div>
+				
 			</nav>
 		
 	</header>
@@ -63,41 +49,42 @@ function myFunction() {
 		<section class="projects_home_page">
 			<div class="content_container"> 
 				<h1>PORTFOLIO</h1>
+				
 				<div class="project_box">
-					<img src="./images/unplugged_retreat/unplugged_retreat_mainimage.png" alt="project photo">
+					<img src="./images/unplugged_retreat/unplugged_retreat_mainimage.png" alt="project photo"> 
 					<div class="middle_text">
-					<h3>Unplugged Retreat</h3>
+						<h3><a href="./portfolio/unplugged.html">Unplugged Retreat</a></h3>
+					</div>	
+				</div>
+		
+				<div class="project_box"> 
+					<img src="./images/github_repo/github_repo_mainimage.png"  alt="project photo">
+					<div class="middle_text">
+					<h3><a href="./portfolio/github_gallery.html">Github Repo Gallery</a></h3>
 					</div>
-					   
+					 
 					
 				</div>
 				<div class="project_box">
-					<div class="middle_text">
-						<h3>Sticky Note App</h3>
-					</div>
-					 <img src="./images/note_taking_app/note_taking_app_mainimage.png" alt="project photo">
-					
-				</div>
-				<div class="project_box">
-					<div class="middle_text">
-					<h3>Github Repo Gallery</h3>
-					</div>
-					 <img src="./images/github_repo/github_repo_mainimage.png"  alt="project photo"> 
-					
-				</div>
-				<div class="project_box">
-					<div class="middle_text">
-					<h3>Guess the Word</h3>
-					</div>
 					<img src="./images/guess_the_word/guess_the_word_mainimage.png"  alt="project photo">
+					<div class="middle_text">
+					<h3><a href="./portfolio/guessword_game.html">Guess the Word</a></h3>
+					</div>
+					
 					
 				</div>
 				<div class="project_box">
-					<div class="middle_text">
-					<h3>Name Tag Generator</h3>
-					</div>
 					<img src="./images/nametag_generator/nametag_generator_mainimage.png"  alt="project photo">
-					
+					<div class="middle_text">
+					<h3><a href="./portfolio/nametag_generator.html">Name Tag Generator</a></h3>
+					</div>
+				</div>
+
+				<div class="project_box">
+					<img src="./images/note_taking_app/note_taking_app_mainimage.png" alt="project photo">
+					<div class="middle_text">
+						<h3><a href="./portfolio/sitcky_note.html">Sticky Note App</a></h3>
+					</div>
 				</div>
 			</div> <!--content_container-->
 			
@@ -126,7 +113,7 @@ function myFunction() {
 					<div class="social_media">
 						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
 						 
-						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-4x " ></i>
+						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
 					</div>
 				
 			</div> <!--content_container-->
