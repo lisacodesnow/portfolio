@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Contact</title>
-	<link rel="stylesheet" href="../scss/main.scss">
+	<link rel="stylesheet" href="../css/contact.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
@@ -13,35 +13,68 @@
 </head>
 
 <body>
-	
-	<main>
+	<header>
 		
-	</main>
-	<footer>
+		<nav>
+			
+				<a href="../index.html" class="name" > Lisa Thompson </a>
+				
+			<div id="myLinks">
+				<a href="../index.html">Portfolio</a>
+				<a href="../about/index.html">About</a>
+				
+			</div>
+			
+		</nav>
+	
+</header>
+	<main>
 		<section class="contact">
 			<div class="content_container">
-				<h2>Say Hi!</h2>
-				<h3> Lisa Thompson</h3>
+				
+				<h1> Lisa Thompson</h1>
 				<p class="email"> llmt2007@aol.com</p>
-				<h2 class="find_me">Find Me</h2>
+				
 					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-2x fa-beat" style="--fa-primary-color: red" ></i></a>
+						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
 						 
-						<a href="https://github.com/lisacodesnow" target="_blank"></a><i class="fa-brands fa-square-github fa-2x fa-beat" ></i>
+						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
 					</div>
 				
 			</div> <!--content_container-->
-			<div class="fun_fact">
-			<h2>Fun Fact</h2>
-			<p>I have an odd talent for guessing people’s age, within a one plus or minus range.
-			</p>
-		</div>
 			
 		</section>
-		
+	</main>
+	<footer>
+		<section class="copyright">
+			<div class="content_container">
+				
+				<p class="copyright_date"> Copyright 2023</p>
+				<p> Lisa Thompson</p>
+
+				
+			</div> <!--content_container-->
+			
+		</section>
 	</footer>
 </body>
 	
 	
 </body>
+
+<!--sticky header script-->
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.querySelector("header");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 </html>

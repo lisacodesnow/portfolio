@@ -30,16 +30,17 @@
 			</div>
 			
 		</nav>
-	
+
+		<div class="back_to_portfolio">
+			<a href="../index.html" > back to portfolio </a>
+		</div>
+			
 </header>
 	<main>
 
 		<section class="individual_project_pages">
 			<div class="content_container"> 
 				<div class="portfolio_pieces">
-					<div class="back_to_portfolio">
-					<a href="../index.html" > back to portfolio </a>
-					</div>
 					
 					<figure> <img src="../images/github_repo/github_repo_mainimage.png"  alt="project photo"> </figure>
 					<h1>Github Repo Gallery</h1>
@@ -91,7 +92,7 @@
 					<div class="live_page">
 					<a href="
 					https://lisacodesnow.github.io/github-repo-gallery/
-					">Live Page</a>
+					" target="_blank">Live Page</a>
 					</div>
 				</div> <!--github_gallery-->
 				</div><!--portfolio_pieces-->
@@ -100,21 +101,33 @@
 		
 	</main>
 	<footer>
-		<section class="contact">
+		<section class="copyright">
 			<div class="content_container">
 				
-				<h1> Lisa Thompson</h1>
-				<p class="email"> llmt2007@aol.com</p>
-				
-					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
-						 
-						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
-					</div>
+				<p class="copyright_date"> Copyright 2023</p>
+				<p> Lisa Thompson</p>
+
 				
 			</div> <!--content_container-->
 			
 		</section>
 	</footer>
 </body>
+
+<!--sticky header script-->
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.querySelector("header");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+
 </html>

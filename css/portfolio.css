@@ -1,13 +1,14 @@
-.portfolio_pieces .back_to_portfolio {
-  margin-bottom: 100px;
+.back_to_portfolio {
+  margin: 100px 60px;
 }
-.portfolio_pieces .back_to_portfolio a {
+.back_to_portfolio a {
   text-decoration: none;
   color: #F2F2F2;
 }
-.portfolio_pieces .back_to_portfolio a:hover {
+.back_to_portfolio a:hover {
   color: red;
 }
+
 .portfolio_pieces li {
   font-size: 1.5em;
 }
@@ -29,8 +30,8 @@
   text-decoration: underline;
 }
 .portfolio_pieces p {
-  margin: 40px 0px;
-  line-height: 1.5em;
+  margin: 80px 0px;
+  line-height: 2em;
   font-size: 1.5em;
 }
 .portfolio_pieces .live_page {

@@ -1,0 +1,32 @@
+.about figure {
+  padding: 100px;
+}
+.about h1 {
+  font-size: 5em;
+  padding: 20px 0px;
+}
+.about h2 {
+  font-size: 3em;
+  text-decoration: underline;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.about p {
+  margin: 80px 0px;
+  line-height: 2em;
+  font-size: 2em;
+}
+.about .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .resume a {
+  text-decoration: none;
+  color: #F2F2F2;
+  text-align: center;
+  font-size: 3em;
+}
+.about .resume a:hover {
+  color: red;
+}

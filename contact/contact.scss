@@ -1,0 +1,43 @@
+$off-white-primary: #F2F2F2;
+$yellow-green-secondary: #EFFAA0;
+$accent-brown: #B05404;
+$accent-red: red;
+
+$heading-font: 'Playfair Display', serif;
+$paragraph-font: 'Raleway', sans-serif;
+
+
+.contact{
+	.content_container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 30px;
+		color: $off-white-primary;
+	
+		h1{
+			font-size: 2em;
+		}
+		
+	
+	.email{
+		margin-top: 20px;
+		border-bottom: 1px solid white;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 50px;
+		font-size: 2em;
+	}
+	.social_media{
+		display: flex;
+		justify-content: space-around;
+		margin: 30px 0px 50px;
+		width: 50%;
+		
+		i{
+			color: white;
+		}
+	}/*social media end*/
+	}/*content container end*/
+} /*contact end*/

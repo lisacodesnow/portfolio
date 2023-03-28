@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="https://kit.fontawesome.com/d1e454272d.css" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--<script src="./js/script.js" defer></script> -->
-	
-	
+
 </head>
+
+
 
 <body>
 	<header>
@@ -104,17 +104,12 @@
 		</section>
 	</main>
 	<footer>
-		<section class="contact">
+		<section class="copyright">
 			<div class="content_container">
 				
-				<h1> Lisa Thompson</h1>
-				<p class="email"> llmt2007@aol.com</p>
-				
-					<div class="social_media">
-						<a href="https://www.linkedin.com/in/lisathompson33/" target="_blank"><i class="fa-brands fa-linkedin fa-4x " ></i></a>
-						 
-						<a href="https://github.com/lisacodesnow?tab=repositories" target="_blank"><i class="fa-brands fa-square-github fa-4x " ></i></a>
-					</div>
+				<p class="copyright_date"> Copyright 2023</p>
+				<p> Lisa Thompson</p>
+
 				
 			</div> <!--content_container-->
 			
@@ -122,4 +117,20 @@
 		
 	</footer>
 </body>
+<!--sticky header script-->
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.querySelector("header");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
+
 </html>

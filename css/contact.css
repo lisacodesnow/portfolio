@@ -1,0 +1,34 @@
+.contact {
+  /*content container end*/
+}
+.contact .content_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  color: #F2F2F2;
+  /*social media end*/
+}
+.contact .content_container h1 {
+  font-size: 2em;
+}
+.contact .content_container .email {
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 2em;
+}
+.contact .content_container .social_media {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px 50px;
+  width: 50%;
+}
+.contact .content_container .social_media i {
+  color: white;
+}
+
+/*contact end*/
