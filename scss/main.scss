@@ -48,6 +48,9 @@ header{
 
 	background-color: black;
 	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 	nav{
 		
@@ -62,14 +65,15 @@ header{
 			display: flex;
 			justify-content: space-evenly;
 			  align-items: center;
-			  width: 40%;
+			  width: 100%;
 				
 				
 		}
 		a{
-					font-size: 2em;
+					font-size: 1em;
 					color: white;
 			  text-decoration: none;
+			  width: 100%;
 				}
 		
 		a:hover {
@@ -253,23 +257,12 @@ footer{
 
 }/*body end*/	
 
-/*@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 
-	body{
-		background-color: #B05404;
-
-		#myLinks{
-			display: flex;
-		  flex-direction: row;
-		  justify-content: center;
-		  align-items: center;
-			margin-top: 50px;
-			a{
-				font-size: 3em;
-			}
+		body header nav #myLinks{
+			
+		
+		  width: 30%;
 	}
 
-	
-	}
-	
-}*/
+}

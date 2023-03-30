@@ -1,9 +1,14 @@
 .contact {
   /*content container end*/
 }
+.contact .contact_name {
+  text-align: center;
+  margin: 100px 0px;
+  font-size: 5em;
+}
 .contact .content_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 30px;
@@ -11,24 +16,50 @@
   /*social media end*/
 }
 .contact .content_container h1 {
+  font-size: 3em;
+}
+.contact .content_container .contact_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .content_container .contact_information .lets_connect {
+  margin-bottom: 100px;
+}
+.contact .content_container .contact_information .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+  padding: 0px 100px;
+}
+.contact .content_container .contact_information .email h1 {
   font-size: 2em;
 }
-.contact .content_container .email {
-  margin-top: 20px;
-  border-bottom: 1px solid white;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 50px;
+.contact .content_container .contact_information .email p {
   font-size: 2em;
 }
 .contact .content_container .social_media {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 30px 0px 50px;
   width: 50%;
 }
 .contact .content_container .social_media i {
   color: white;
+}
+.contact .content_container .social_media h1 {
+  margin-bottom: 130px;
+}
+.contact .content_container .social_media .social_media_icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /*contact end*/
