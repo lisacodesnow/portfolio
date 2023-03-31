@@ -10,6 +10,7 @@ $paragraph-font: 'Raleway', sans-serif;
 
 html{
 	font-size: 16px;
+	
 }
 
 h1, h2, h3, h4{
@@ -38,7 +39,7 @@ body{
 	
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	
 	background-color: black;
 	color: $off-white-primary;
 	margin: 0px;
@@ -51,29 +52,33 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	
 	nav{
 		
-		margin:60px;
+		margin:60px 0px;
 		
 		background-color: black;
 		display: flex;
 		justify-content: space-between;
-		
+		width: 85%;
 		
 		#myLinks{
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			  align-items: center;
-			  width: 100%;
+			  width: 70%;
 				
 				
 		}
+		.name{
+			width: 100%;
+		}
 		a{
-					font-size: 1em;
+					font-size: 1.10em;
 					color: white;
 			  text-decoration: none;
-			  width: 100%;
+			  
 				}
 		
 		a:hover {
@@ -99,7 +104,7 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 80px;
+		margin: 60px;
 		
 		}
 	
@@ -116,7 +121,7 @@ main{
 			h1{
 				margin: 40px 30px;
 				text-align: center;
-				font-size: 4em;
+				font-size: 3em;
 				line-height: 1.5em;
 			}
 		}
@@ -135,7 +140,7 @@ main{
 		
 		h1{
 			margin: 0px 0px 80px;
-			font-size: 3em;
+			font-size: 2em;
 		}
 	
 	.project_box{
@@ -144,8 +149,8 @@ main{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 20px;
-		width: 500px;
-		height: 500px;
+		width: 200px;
+		height: 200px;
 		position: relative;
 		
 		img{
@@ -201,7 +206,7 @@ main{
 	/*skills home-page*/
 	.skills_and_tools{
 		h1{
-			font-size: 3em;
+			font-size: 2em;
 			margin-bottom: 50px;
 		}
 	.skill_list{
@@ -216,7 +221,7 @@ main{
 			margin: 20px;
 			border-radius:50%;
 			
-			padding: 70px;
+			padding: 20px;
 			background-color: $accent-red;
 			
 		}
@@ -242,7 +247,7 @@ footer{
 		color: $off-white-primary;
 	
 		p{
-			font-size: 2em;
+			font-size: 1em;
 		}
 		
 	
@@ -259,10 +264,22 @@ footer{
 
 @media screen and (min-width: 768px) {
 
-		body header nav #myLinks{
+body{ 
+	header{ 		
+		nav{ 
+			.name{
+				width: 40%;
+			}
+			a{
+				font-size: 2em;
+			}
+			#myLinks{		
 			
 		
-		  width: 30%;
+		
+			width: 30%;
+			}
+		}
 	}
-
 }
+}		
