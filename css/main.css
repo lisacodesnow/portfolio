@@ -16,6 +16,10 @@ h2 {
   color: #F2F2F2;
 }
 
+figure {
+  margin: 0px;
+}
+
 img {
   width: 100%;
 }
@@ -41,6 +45,7 @@ body header {
   z-index: 10;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
@@ -55,10 +60,10 @@ body header nav #myLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 50%;
 }
 body header nav .name {
-  width: 100%;
+  width: 80%;
 }
 body header nav a {
   font-size: 1.1em;
@@ -80,7 +85,7 @@ body main .content_container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 60px;
+  margin: 55px;
 }
 body main .hero .intro {
   display: flex;
@@ -112,8 +117,8 @@ body main .projects_home_page .project_box {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: relative;
   /*img end*/
 }
@@ -138,7 +143,7 @@ body main .projects_home_page .project_box .middle_text {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-body main .projects_home_page .project_box h3 {
+body main .projects_home_page .project_box .middle_text h3 {
   color: white;
   font-size: 1.5em;
 }
@@ -194,6 +199,11 @@ body footer .copyright .content_container .copyright_date {
 
 /*body end*/
 @media screen and (min-width: 768px) {
+  body {
+    /*header end*/
+    /*main end*/
+    /*footer end*/
+  }
   body header nav .name {
     width: 40%;
   }
@@ -201,6 +211,98 @@ body footer .copyright .content_container .copyright_date {
     font-size: 2em;
   }
   body header nav #myLinks {
-    width: 30%;
+    width: 35%;
   }
+  body main {
+    /* projects home-page*/
+    /* projects home-page end*/
+    /*skills home-page*/
+  }
+  body main .hero .intro h1 {
+    font-size: 4em;
+  }
+  body main .projects_home_page {
+    /* project box*/
+  }
+  body main .projects_home_page h1 {
+    margin: 0px 0px 80px;
+    font-size: 3em;
+  }
+  body main .projects_home_page .project_box {
+    width: 500px;
+    height: 500px;
+  }
+  body main .projects_home_page .project_box .middle_text h3 {
+    font-size: 3em;
+  }
+  body main .skills_and_tools h1 {
+    font-size: 3em;
+  }
+  body main .skills_and_tools .skill_list h2 {
+    padding: 40px;
+  }
+  body footer {
+    /*contact end*/
+  }
+  body footer .copyright {
+    /*content container end*/
+  }
+  body footer .copyright .content_container p {
+    font-size: 1.5em;
+  }
+  /*body end*/
+}
+@media screen and (min-width: 1024px) {
+  body {
+    /*header end*/
+    /*main end*/
+    /*footer end*/
+  }
+  body header nav .name {
+    width: 40%;
+  }
+  body header nav a {
+    font-size: 2em;
+  }
+  body header nav #myLinks {
+    width: 25%;
+  }
+  body main {
+    /* projects home-page*/
+    /* projects home-page end*/
+    /*skills home-page*/
+  }
+  body main .hero .intro h1 {
+    font-size: 5em;
+  }
+  body main .projects_home_page {
+    /* project box*/
+  }
+  body main .projects_home_page h1 {
+    margin: 0px 0px 80px;
+    font-size: 3em;
+  }
+  body main .projects_home_page .project_box {
+    width: 500px;
+    height: 500px;
+  }
+  body main .projects_home_page .project_box .middle_text h3 {
+    font-size: 3em;
+  }
+  body main .skills_and_tools h1 {
+    font-size: 3em;
+  }
+  body main .skills_and_tools .skill_list h2 {
+    padding: 40px;
+  }
+  body footer {
+    /*contact end*/
+  }
+  body footer .copyright {
+    /*content container end*/
+  }
+  body footer .copyright .content_container p {
+    font-size: 1.5em;
+  }
+  /*body end*/
 }

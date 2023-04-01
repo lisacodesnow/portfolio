@@ -24,7 +24,9 @@ p,li{
 h2{
 	color: $off-white-primary;
 }
-
+figure{
+	margin: 0px;
+}
 img{
 	width: 100%;
 }
@@ -51,6 +53,7 @@ header{
 	z-index: 10;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
 	
@@ -67,12 +70,12 @@ header{
 			display: flex;
 			justify-content: space-between;
 			  align-items: center;
-			  width: 70%;
+			  width: 50%;
 				
 				
 		}
 		.name{
-			width: 100%;
+			width: 80%;
 		}
 		a{
 					font-size: 1.10em;
@@ -104,7 +107,7 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 60px;
+		margin: 55px;
 		
 		}
 	
@@ -149,8 +152,8 @@ main{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 20px;
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 250px;
 		position: relative;
 		
 		img{
@@ -176,15 +179,17 @@ main{
 		  transform: translate(-50%, -50%);
 		  -ms-transform: translate(-50%, -50%);
 		  text-align: center;
-			
-		}
-		
-		h3{
+		  
+		  h3{
 			
 			  color: white;
 			  font-size: 1.5em;
 			  
 		}
+			
+		}
+		
+		
 		
 		
 			
@@ -277,9 +282,177 @@ body{
 			
 		
 		
-			width: 30%;
+			width: 35%;
 			}
 		}
+	}/*header end*/
+	
+	main{
+
+		
+		.hero{
+
+			.intro{
+				
+				h1{
+					
+					font-size: 4em;
+					
+				}
+			}
+			
+		}
+		
+		/* projects home-page*/
+	.projects_home_page{
+	
+		
+		h1{
+			margin: 0px 0px 80px;
+			font-size: 3em;
+		}
+
+		.project_box{
+			width: 500px;
+			height: 500px;
+			
+		.middle_text{
+		h3{
+			
+			font-size: 3em;
+			
+	 	 }
+		}
+		
+		}	/* project box*/
+		
+	}/* projects home-page end*/
+
+	/*skills home-page*/
+	.skills_and_tools{
+		h1{
+			font-size: 3em;
+			
+		}
+		
+		.skill_list{
+		
+		h2{
+
+			padding: 40px;
+
+		}
+
+		}
 	}
-}
-}		
+	}/*main end*/
+
+	footer{
+		.copyright{
+			.content_container{	
+				p{
+					font-size: 1.5em;
+				}
+			}/*content container end*/
+		} /*contact end*/
+		}/*footer end*/
+	
+}/*body end*/
+
+
+}	
+
+
+@media screen and (min-width: 1024px) {
+
+	body{ 
+
+		header{ 		
+			nav{ 
+				.name{
+					width: 40%;
+				}
+				a{
+					font-size: 2em;
+				}
+				#myLinks{		
+				
+			
+			
+				width: 25%;
+				}
+			}
+		}/*header end*/
+		
+		main{
+			.hero{
+	
+				.intro{
+					
+					h1{
+						
+						font-size: 5em;
+						
+					}
+				}
+				
+			}
+			
+			/* projects home-page*/
+		.projects_home_page{
+		
+			
+			h1{
+				margin: 0px 0px 80px;
+				font-size: 3em;
+			}
+	
+			.project_box{
+				width: 500px;
+				height: 500px;
+				
+			.middle_text{
+			h3{
+				
+				font-size: 3em;
+				
+			  }
+			}
+			
+			}	/* project box*/
+			
+		}/* projects home-page end*/
+	
+		/*skills home-page*/
+		.skills_and_tools{
+			h1{
+				font-size: 3em;
+				
+			}
+			
+			.skill_list{
+			
+			h2{
+	
+				padding: 40px;
+	
+			}
+	
+			}
+		}
+		}/*main end*/
+	
+		footer{
+			.copyright{
+				.content_container{	
+					p{
+						font-size: 1.5em;
+					}
+				}/*content container end*/
+			} /*contact end*/
+			}/*footer end*/
+		
+	}/*body end*/
+	
+	
+	}		
