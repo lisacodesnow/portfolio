@@ -6,26 +6,30 @@ $accent-red: red;
 $heading-font: 'Playfair Display', serif;
 $paragraph-font: 'Raleway', sans-serif;
 
-
+main{
+	display: flex;
+	align-items: center;
 .contact{
-
+	
+	width: 370px;
+	margin-top: 50px;
 	.contact_name{
 		
 		text-align: center;
-		margin: 100px 0px;
-		font-size: 5em;
-		
+		margin: 50px 30px;
+		font-size: 3.5em;
 	}
 	.content_container{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		
 		margin: 30px;
 		color: $off-white-primary;
 	
 		h1{
-			font-size: 3em;
+			font-size: 1.5em;
 		}
 		
 	.contact_information{
@@ -34,9 +38,15 @@ $paragraph-font: 'Raleway', sans-serif;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 50%;
+		border-right: 1px solid $off-white-primary;
+		padding-right: 15px;
+
 		
 		.lets_connect{
-			margin-bottom: 100px;
+			margin-bottom: 50px;
+			text-align: center;
+			
 
 		}
 	.email{
@@ -44,14 +54,15 @@ $paragraph-font: 'Raleway', sans-serif;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		border-right: 1px solid white;
-		padding: 0px 100px;
+		
+		
 
-		h1{
-			font-size: 2em;
+		h2{
+			font-size: 1em;
 		}
+
 		p{
-			font-size: 2em;
+			font-size: 1em;
 		}
 		}
 	}	
@@ -60,23 +71,48 @@ $paragraph-font: 'Raleway', sans-serif;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 30px 0px 50px;
+		margin: 0px 0px 30px;
 		width: 50%;
+		
 		
 		i{
 			color: white;
 		}
 
 		h1{
-			margin-bottom: 130px;
+			font-size: 1.5em;
+			text-align: center;
+			margin-bottom: 55px;
 		}
+
+	
 
 		.social_media_icons{
 			display: flex;
-			justify-content: space-around;
-			width: 100%;
-			margin-bottom: 20px;
+			width: 100px;
+			justify-content: space-between;
+			
+			
 		}
 	}/*social media end*/
 	}/*content container end*/
 } /*contact end*/
+}
+
+@media screen and (min-width: 768px){
+	main{
+		
+	.contact{
+		
+		width: 500px;
+		height:350px;
+		
+		
+		.contact_information{
+			padding-right: 30px;
+
+		}
+	}
+}
+		
+}

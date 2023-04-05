@@ -68,9 +68,9 @@ header{
 		
 		#myLinks{
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			  align-items: center;
-			  width: 50%;
+			  width: 200px;
 				
 				
 		}
@@ -152,8 +152,7 @@ main{
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 20px;
-		width: 250px;
-		height: 250px;
+		
 		position: relative;
 		
 		img{
@@ -189,11 +188,6 @@ main{
 			
 		}
 		
-		
-		
-		
-			
-		
 		} /* project box*/
 		
 		.project_box:hover .middle_text{
@@ -216,23 +210,17 @@ main{
 		}
 	.skill_list{
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		
 		h2{
 			color: $off-white-primary;
-			border: 0px solid $accent-red;
+			
 			margin: 20px;
-			border-radius:50%;
 			
-			padding: 20px;
-			background-color: $accent-red;
 			
-		}
-		h2:hover{
-			background-color: $off-white-primary;
-			color: red;
+			
 		}
 	}
 	
@@ -276,7 +264,7 @@ body{
 				width: 40%;
 			}
 			a{
-				font-size: 2em;
+				font-size: 1.5em;
 			}
 			#myLinks{		
 			
@@ -313,9 +301,8 @@ body{
 		}
 
 		.project_box{
-			width: 500px;
-			height: 500px;
 			
+			width: 65%;
 		.middle_text{
 		h3{
 			
@@ -336,10 +323,16 @@ body{
 		}
 		
 		.skill_list{
+			display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 140px;
 		
 		h2{
 
-			padding: 40px;
+			padding: 10px;
 
 		}
 
@@ -373,7 +366,7 @@ body{
 					width: 40%;
 				}
 				a{
-					font-size: 2em;
+					font-size: 1.5em;
 				}
 				#myLinks{		
 				
@@ -408,8 +401,7 @@ body{
 			}
 	
 			.project_box{
-				width: 500px;
-				height: 500px;
+				
 				
 			.middle_text{
 			h3{
@@ -434,7 +426,7 @@ body{
 			
 			h2{
 	
-				padding: 40px;
+				padding: 10px;
 	
 			}
 	

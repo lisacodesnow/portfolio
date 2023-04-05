@@ -43,7 +43,7 @@ $paragraph-font: 'Raleway', sans-serif;
                 }
                 h1{
                     font-size: 3em;
-                    padding:20px 0px;
+                    padding:40px 0px;
                 }
                 h2{
                     font-size: 2em;
@@ -61,21 +61,32 @@ $paragraph-font: 'Raleway', sans-serif;
                     font-size: 1em;
                 }
                 
+                .live_page_button{
+
+                    display: flex;
+                    justify-content: center;
                 .live_page{
                     
+                    display: flex;
+                    justify-content: center;
                     padding: 20px;
                     border-radius: 50px;
                     background-color: red;
                     text-align: center;
-                    margin-top: 70px;
+                    margin-top: 50px;
+                    
+                   
                     a{
                        
                         text-decoration: none;
                        color: $off-white-primary;
-                       font-size: 1.5em;
+                       font-size: 1.25em;
+                    
+                        
                     }
                     
                    
+                }
                 }
                 .live_page:hover {
                     background-color: $off-white-primary;
@@ -90,38 +101,41 @@ $paragraph-font: 'Raleway', sans-serif;
  @media screen and (min-width: 768px) {
     .back_to_portfolio{
        
-        margin-left:80px;
+        margin-left:110px;
             a{
             font-size: 1.25em; 
            
         } 
     }
- }
+ 
  .portfolio_pieces{
 
     li{
         font-size: 1em;
+        margin: 0px 140px;
     }
 
             figure{
                
                 padding: 10px 0px;
-                
+                margin: 0px 140px;
                
 
                 img{
                     object-fit: cover;
+
                     
                 }
             }
             h1{
                 font-size: 3.5em;
                 padding:40px 0px;
+                margin: 0px 140px;
             }
             h2{
                 font-size: 2.5em;
                 
-                margin: 1em 0em;
+                margin: 16px 140px;
             }
             h3{
                 font-size: 1.5em;
@@ -131,8 +145,18 @@ $paragraph-font: 'Raleway', sans-serif;
               
                 font-size: 1.5em;
                 line-height: 1.5em;
+                margin: 40px 140px;
             }
             
-          
+          .live_page_button{
+          .live_page{
+            width: 200px;
+            padding: 20px 0px;
+            margin-top: 70px;
+           
+          }
             
           } /* portfolio pieces end */
+        
+        }
+}
