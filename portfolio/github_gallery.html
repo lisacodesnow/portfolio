@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang = "en">
 <head>
 	<title>Github Gallery</title>
 	
@@ -34,7 +34,23 @@
 	<div class="back_to_portfolio">
 			<a href="../index.html" > back to portfolio </a>
 		</div>	
-			
+	
+	<!--sticky header javascript-->
+	<script>
+		window.onscroll = function() {myFunction()};
+		
+		var header = document.querySelector("header");
+		var sticky = header.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	</script>
+
 </header>
 	<main>
 		
@@ -46,7 +62,9 @@
 					<h1>Github Repo Gallery</h1>
 					<p class="project_info">
 						<h2>Overview</h2>
-						<p>The Github Repo Gallery is a project that pulls data from my Github portfolio site. A gallery of repositories are created using  API’s to fetch the Github data and CSS.  The repositories can be searched through and once clicked can take the user to that github’s repository.</p>
+						<p>The Github Repo Gallery is a project that pulls data from my Github portfolio site. 
+						A gallery of repositories are created using  API’s to fetch the Github data and CSS. 
+						The repositories can be searched through and once clicked can take the user to that github’s repository.
 					</p>
 					<div class=" challenge">
 						<h2>Challenge</h2>
@@ -95,8 +113,7 @@
 					https://lisacodesnow.github.io/github-repo-gallery/
 					" target="_blank">Go to Live Page</a>
 					</div>
-					</div>
-				</div> <!--github_gallery-->
+				</div>
 				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
@@ -106,8 +123,8 @@
 		<section class="copyright">
 			<div class="content_container">
 				
-				<p class="copyright_date"> Copyright 2023</p>
-				<p> Lisa Thompson</p>
+				<h2 class="copyright_date"> Copyright 2023</h2>
+				<h2> Lisa Thompson</h2>
 
 				
 			</div> <!--content_container-->
@@ -115,21 +132,5 @@
 		</section>
 	</footer>
 </body>
-
-<!--sticky header script-->
-<script>
-	window.onscroll = function() {myFunction()};
-	
-	var header = document.querySelector("header");
-	var sticky = header.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	</script>
 
 </html>

@@ -37,6 +37,22 @@
 			<a href="../index.html" > back to portfolio </a>
 			</div>
 	
+		<!--sticky header javascript-->
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.querySelector("header");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+	
 </header>
 	<main>
 
@@ -99,7 +115,6 @@
 					" target="_blank"> Go to Live Page</a>
 					</div>
 				</div>
-				</div> <!--github_gallery-->
 				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
@@ -109,8 +124,8 @@
 		<section class="copyright">
 			<div class="content_container">
 				
-				<p class="copyright_date"> Copyright 2023</p>
-				<p> Lisa Thompson</p>
+				<h2 class="copyright_date"> Copyright 2023</h2>
+				<h2> Lisa Thompson</h2>
 
 				
 			</div> <!--content_container-->
@@ -119,19 +134,4 @@
 	</footer>
 </body>
 
-<!--sticky header script-->
-<script>
-	window.onscroll = function() {myFunction()};
-	
-	var header = document.querySelector("header");
-	var sticky = header.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	</script>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang = "en">
 <head>
 	<title>Sticky Note</title>
 	
@@ -35,7 +35,23 @@
 		<div class="back_to_portfolio">
 			<a href="../index.html" > back to portfolio </a>
 			</div>
+		
+		<!--sticky header javascript-->
+		<script>
+			window.onscroll = function() {myFunction()};
 			
+			var header = document.querySelector("header");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+	
 	
 </header>
 	<main>
@@ -72,7 +88,7 @@
 								<br>Two event listeners and handlers were used:
 								<ul>
 									<li>The <b>onChange listener </b>is used with the input element and listens for a change in value, i.e when text is typed. 
-										Once the text is typed it calls the updateChalk event handler.</li> <br>
+										Once the text is typed it calls the updateChalk event handler.</li>
 								
 									<li>The <b>onSubmit listener</b> is used with the form element and triggers
 										 the updateNotes event handler when the submit button is pushed.</li>
@@ -102,7 +118,6 @@
 					" target="_blank">Go to Live Page</a>
 					</div>
 					</div>
-				</div> <!--github_gallery-->
 				</div><!--portfolio_pieces-->
 			</div> <!--content_container-->
 		</section>
@@ -112,8 +127,8 @@
 		<section class="copyright">
 			<div class="content_container">
 				
-				<p class="copyright_date"> Copyright 2023</p>
-				<p> Lisa Thompson</p>
+				<h2 class="copyright_date"> Copyright 2023</h2>
+				<h2> Lisa Thompson</h2>
 
 				
 			</div> <!--content_container-->
@@ -122,19 +137,4 @@
 	</footer>
 </body>
 
-<!--sticky header script-->
-<script>
-	window.onscroll = function() {myFunction()};
-	
-	var header = document.querySelector("header");
-	var sticky = header.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	</script>
 </html>

@@ -231,6 +231,7 @@ main{
 } /*main end*/
 	
 footer{
+	margin-bottom: 20px;
 .copyright{
 	.content_container{
 		display: flex;
@@ -239,7 +240,7 @@ footer{
 		margin: 30px;
 		color: $off-white-primary;
 	
-		p{
+		h2{
 			font-size: 1em;
 		}
 		
@@ -340,15 +341,6 @@ body{
 	}
 	}/*main end*/
 
-	footer{
-		.copyright{
-			.content_container{	
-				p{
-					font-size: 1.5em;
-				}
-			}/*content container end*/
-		} /*contact end*/
-		}/*footer end*/
 	
 }/*body end*/
 
@@ -433,16 +425,6 @@ body{
 			}
 		}
 		}/*main end*/
-	
-		footer{
-			.copyright{
-				.content_container{	
-					p{
-						font-size: 1.5em;
-					}
-				}/*content container end*/
-			} /*contact end*/
-			}/*footer end*/
 		
 	}/*body end*/
 	

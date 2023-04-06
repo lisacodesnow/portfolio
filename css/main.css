@@ -166,6 +166,7 @@ body main .skills_and_tools .skill_list h2 {
   margin: 20px;
 }
 body footer {
+  margin-bottom: 20px;
   /*contact end*/
 }
 body footer .copyright {
@@ -178,7 +179,7 @@ body footer .copyright .content_container {
   margin: 30px;
   color: #F2F2F2;
 }
-body footer .copyright .content_container p {
+body footer .copyright .content_container h2 {
   font-size: 1em;
 }
 body footer .copyright .content_container .copyright_date {
@@ -192,7 +193,6 @@ body footer .copyright .content_container .copyright_date {
   body {
     /*header end*/
     /*main end*/
-    /*footer end*/
   }
   body header nav .name {
     width: 40%;
@@ -238,22 +238,12 @@ body footer .copyright .content_container .copyright_date {
   body main .skills_and_tools .skill_list h2 {
     padding: 10px;
   }
-  body footer {
-    /*contact end*/
-  }
-  body footer .copyright {
-    /*content container end*/
-  }
-  body footer .copyright .content_container p {
-    font-size: 1.5em;
-  }
   /*body end*/
 }
 @media screen and (min-width: 1024px) {
   body {
     /*header end*/
     /*main end*/
-    /*footer end*/
   }
   body header nav .name {
     width: 40%;
@@ -287,15 +277,6 @@ body footer .copyright .content_container .copyright_date {
   }
   body main .skills_and_tools .skill_list h2 {
     padding: 10px;
-  }
-  body footer {
-    /*contact end*/
-  }
-  body footer .copyright {
-    /*content container end*/
-  }
-  body footer .copyright .content_container p {
-    font-size: 1.5em;
   }
   /*body end*/
 }

@@ -14,12 +14,12 @@
 
 .portfolio_pieces li {
   font-size: 1em;
+  margin-bottom: 10px;
 }
 .portfolio_pieces figure {
   padding: 10px 0px;
 }
 .portfolio_pieces figure img {
-  -o-object-fit: cover;
      object-fit: cover;
 }
 .portfolio_pieces h1 {
@@ -79,14 +79,13 @@
   }
   .portfolio_pieces li {
     font-size: 1em;
-    margin: 0px 140px;
+    margin: 0px 140px 10px;
   }
   .portfolio_pieces figure {
     padding: 10px 0px;
     margin: 0px 140px;
   }
   .portfolio_pieces figure img {
-    -o-object-fit: cover;
        object-fit: cover;
   }
   .portfolio_pieces h1 {

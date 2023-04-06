@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang = "en">
 <head>
 <meta charset="utf-8">
 <title>Contact</title>
@@ -10,8 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
-
-	<meta charset="utf-8">
+	
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,6 +32,23 @@
 			</div>
 			
 		</nav>
+
+		<!--sticky header javascript-->
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.querySelector("header");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+	
 	
 </header>
 	<main>
@@ -68,8 +84,8 @@
 		<section class="copyright">
 			<div class="content_container">
 				
-				<p class="copyright_date"> Copyright 2023</p>
-				<p> Lisa Thompson</p>
+				<h2 class="copyright_date"> Copyright 2023</h2>
+				<h2> Lisa Thompson</h2>
 
 				
 			</div> <!--content_container-->
@@ -77,23 +93,4 @@
 		</section>
 	</footer>
 </body>
-	
-	
-</body>
-
-<!--sticky header script-->
-<script>
-	window.onscroll = function() {myFunction()};
-	
-	var header = document.querySelector("header");
-	var sticky = header.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	</script>
 </html>
