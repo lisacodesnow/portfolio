@@ -20,6 +20,7 @@
   padding: 10px 0px;
 }
 .portfolio_pieces figure img {
+  -o-object-fit: cover;
      object-fit: cover;
 }
 .portfolio_pieces h1 {
@@ -78,7 +79,7 @@
     /* portfolio pieces end */
   }
   .portfolio_pieces li {
-    font-size: 1em;
+    font-size: 1.25em;
     margin: 0px 140px 10px;
   }
   .portfolio_pieces figure {
@@ -86,6 +87,7 @@
     margin: 0px 140px;
   }
   .portfolio_pieces figure img {
+    -o-object-fit: cover;
        object-fit: cover;
   }
   .portfolio_pieces h1 {

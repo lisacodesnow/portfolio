@@ -64,38 +64,47 @@
 					<h1>Sticky Note</h1>
 					<p class="project_info">
 						<h2>Overview</h2>
-						<p>The Note Taking app is an interactive interface that allows users to create notes that are displayed on the screen. React is using  JSX for the apps UI and stateful components to manage the data typed by the user.
+						<p>The Note Taking app is an interactive interface that allows users to create notes that are displayed on the screen.
+							 React is using JSX for the app's UI and stateful components to manage the data typed by the user.
 						</p>
 					<div class=" challenge">
 						<h2>Challenge</h2>
 						<p>
-							The challenge I had was making the application interactive so it could display
+							The challenge I had was making the application interactive, so it could display
 							the user's typed words.
 						</p>
 
 					</div>
 					<div class="solution">
 						<h2>Solution</h2>
-						<p>So far I had built applications with functional components that used an already built data model. In order for notes, the user’s typed words, to be received the state 
+						<p>So far, I had built applications with functional components that used an already built data model. In order for notes, the user’s typed words, to be received, the state 
 							needed to have empty data models.</p>
 
 							<figure> <img src="../images/note_taking_app/note_taking_app_state_code.png"  alt="project photo"> </figure>
-							<p>Utilizing event listeners and handlers is how the app became interactive and can display user’s typed words.<br>
+							<p>Utilizing event listeners and handlers is how I made the app interactive to display user’s typed words.<br>
 
-								<br>Event listeners listen for an event to happen i.e typing, and the event handler is triggered once the text is typed or button is hit. 
+								<br>Event listeners listen for an event to happen, i.e. typing, and the event handler is triggered once the text is typed or button is hit. 
 								The event handler actually updates the state so the changes can be displayed on the screen.<br>
 								
-								<br>Two event listeners and handlers were used:
+								<br>Two event listeners and handlers were used:</p>
 								<ul>
-									<li>The <b>onChange listener </b>is used with the input element and listens for a change in value, i.e when text is typed. 
+									<li>The <b>onChange listener </b>works with the input element and listens for a change in value, i.e. entering text. 
 										Once the text is typed it calls the updateChalk event handler.</li>
 								
-									<li>The <b>onSubmit listener</b> is used with the form element and triggers
-										 the updateNotes event handler when the submit button is pushed.</li>
+									<li>The <b>onSubmit listener</b> works with the form element and triggers
+										 the updateNotes event handler when pushing the submit button.</li>
 
 								</ul>
+							<figure><img src="../images/note_taking_app/note_taking_app_event_listener.png" alt="project photo"></figure>
+							<p>The two event handlers are functions that I created to update state:</p>
+							<ul>
+								<li>The <b>updateChalk event handler</b> updates the “chalk” property empty string. This property is what is used to show the user's typed words.
+								</li>
+								<li>The <b>updateNotes event handler</b> updates the “notes” property empty array. The array collects all the notes typed and submitted.
+								</li>
+							</ul>
 							<figure> <img src="../images/note_taking_app/note_taking_app_updating_state.png"  alt="project photo"> </figure>
-							<p>The ability to create a product that entertains and is useful to people is the most exciting part for me. To accomplish app interactivity for users to experience is the rewarding part about coding.
+							<p>To accomplish app interactivity for users to experience is the rewarding part about coding.
 							</p>
 					</div>
 					<div class="project_skills">
@@ -109,7 +118,7 @@
 					</div>
 					<div class="project_tools">
 						<h2> Tools</h2>
-						<p>Git, Github, Dreamweaver</p>
+						<p>Git, Github, Dreamweaver, Visual Studio Code</p>
 					</div>
 					<div class="live_page_button">
 					<div class="live_page">
