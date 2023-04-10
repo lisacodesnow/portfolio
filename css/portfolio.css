@@ -12,6 +12,9 @@
   color: red;
 }
 
+.portfolio_pieces ul {
+  margin-top: -15px;
+}
 .portfolio_pieces li {
   font-size: 1em;
   margin-bottom: 10px;

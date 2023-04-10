@@ -66,6 +66,7 @@ body header nav .name {
   width: 80%;
 }
 body header nav a {
+  font-family: "Raleway", sans-serif;
   font-size: 1.1em;
   color: white;
   text-decoration: none;

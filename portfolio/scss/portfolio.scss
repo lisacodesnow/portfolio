@@ -25,7 +25,9 @@ $paragraph-font: 'Raleway', sans-serif;
             }
         
    .portfolio_pieces{
-
+        ul{
+            margin-top: -15px;
+        }
         li{
             font-size: 1em;
             margin-bottom: 10px;
