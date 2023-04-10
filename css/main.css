@@ -72,7 +72,7 @@ body header nav a {
   text-decoration: none;
 }
 body header nav a:hover {
-  color: red;
+  color: #374EFF;
 }
 body main {
   display: flex;
