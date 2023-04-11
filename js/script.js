@@ -1,9 +1,20 @@
-const myLinks = document.getElementById("myLinks");
+const x = document.getElementById("myLinks");
 const hamburgerIcon = document.querySelector("i")
 const mediaQuery = window.matchMedia('(max-width: 600px)');
 
-console.log(mediaQuery)
-hamburgerIcon.addEventListener("click", ()=>{
+//console.log(mediaQuery)
+
+function myFunction() {
+  
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+/*hamburgerIcon.addEventListener("click", ()=>{
     if (myLinks.style.display === "flex") {
         myLinks.style.display = "none";
       } else {
@@ -11,9 +22,9 @@ hamburgerIcon.addEventListener("click", ()=>{
       }
 
 
-});
+});*/
 
-const noHamburgerMenu = () =>{
+/*const noHamburgerMenu = () =>{
 
     if (mediaQuery.matches) { // If media query matches
         document.body.style.backgroundColor = "yellow";
@@ -24,4 +35,4 @@ const noHamburgerMenu = () =>{
 
 };
 
-noHamburgerMenu();
+noHamburgerMenu();*/
