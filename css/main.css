@@ -51,7 +51,7 @@ body header {
 }
 body header nav {
   margin: 60px 0px;
-  background-color: black;
+  background-color: blue;
   display: flex;
   justify-content: space-between;
   width: 85%;
