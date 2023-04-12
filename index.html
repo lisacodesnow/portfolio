@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="./js/script.js"></script>
+	<script src="./js/script.js" defer></script>
 </head>
 
 
@@ -37,24 +37,25 @@
 				  </a>
 			</nav>
 
-
+			
 			<!--sticky header javascript-->
-			<script>
-				window.onscroll = function() {myFunction()};
-				
-				var header = document.querySelector("header");
-				var sticky = header.offsetTop;
-				
-				function myFunction() {
-				  if (window.pageYOffset > sticky) {
-					header.classList.add("sticky");
-				  } else {
-					header.classList.remove("sticky");
-				  }
-				}
-			</script>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.querySelector("header");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
 		
 	</header>
+	
 	
 	<main>
 		

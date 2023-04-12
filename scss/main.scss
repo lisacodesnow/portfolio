@@ -59,31 +59,31 @@ header{
 	
 	nav{
 		
+	
 		margin:60px 0px;
+		background-color:black;
+		position: relative;
+		width: 100%;
+	
 		
-		background-color: blue;
-		display: flex;
-		justify-content: space-between;
-		width: 85%;
-		
-		#myLinks{
-			display: flex;
-			justify-content: space-around;
-			  align-items: center;
-			  width: 200px;
+		 #myLinks{
+			display: none
+
+			
 				
 				
 		}
-		.name{
-			width: 80%;
-		}
+		
 		a{
 			font-family: $paragraph-font;	
 			font-size: 1.10em;
 			color: white;
 			text-decoration: none;
+			display: block;
+			margin: 30px 0px;
+			text-align: center;
+		
 			
-			  
 				}
 				
 		
@@ -93,6 +93,18 @@ header{
 			
 		}
 		
+		.name{
+			width: 40%;
+			margin: 0px;
+
+		}
+		.icon{
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			margin: 0px;
+		}
 		
 		
 	}
