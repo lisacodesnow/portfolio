@@ -13,7 +13,7 @@ hamburgerIcon.addEventListener("click", ()=>{
 
 });
 
-const noHamburgerMenu = () =>{
+/*const noHamburgerMenu = () =>{
 
     if (mediaQuery.matches) { // If media query matches
         document.body.style.backgroundColor = "yellow";
@@ -24,4 +24,4 @@ const noHamburgerMenu = () =>{
 
 };
 
-noHamburgerMenu();
+noHamburgerMenu();*/
