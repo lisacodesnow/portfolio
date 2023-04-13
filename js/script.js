@@ -1,12 +1,12 @@
-
+const navLinks = document.getElementById("myLinks");
 const hamburgerIcon = document.querySelector("i")
-const mediaQuery = window.matchMedia('(max-width: 600px)');
+const mediaQuery = window.matchMedia('(max-width: 700px)');
 
 //console.log(mediaQuery)
 
 
 
-window.onscroll = function() {myFunction()};
+/*window.onscroll = function() {myFunction()};
 			
 			var header = document.querySelector("header");
 			var sticky = header.offsetTop;
@@ -17,14 +17,14 @@ window.onscroll = function() {myFunction()};
 			  } else {
 				header.classList.remove("sticky");
 			  }
-			}
+			}*/
 
       function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+       
+        if (navLinks.style.display === "block") {
+          navLinks.style.display = "none";
         } else {
-          x.style.display = "block";
+          navLinks.style.display = "block";
         }
       }
 
@@ -42,9 +42,7 @@ window.onscroll = function() {myFunction()};
 
     if (mediaQuery.matches) { // If media query matches
         document.body.style.backgroundColor = "yellow";
-      } else {
-        document.body.style.backgroundColor = "pink";
-      }
+      } 
     
 
 };

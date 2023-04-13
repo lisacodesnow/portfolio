@@ -45,6 +45,7 @@ body{
 	background-color: black;
 	color: $off-white-primary;
 	margin: 0px;
+	position: relative;
 	
 
 header{
@@ -56,21 +57,21 @@ header{
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
+	position: sticky;
+	top: 0px;
 	
 	nav{
 		
 	
-		margin:60px 0px;
+		margin:40px 0px;
 		background-color:black;
 		position: relative;
-		width: 100%;
+		width: 85%;
 	
 		
 		 #myLinks{
 			display: none
 
-			
-				
 				
 		}
 		
@@ -80,7 +81,7 @@ header{
 			color: white;
 			text-decoration: none;
 			display: block;
-			margin: 30px 0px;
+			margin: 50px 0px;
 			text-align: center;
 		
 			
@@ -95,7 +96,7 @@ header{
 		
 		.name{
 			width: 40%;
-			margin: 0px;
+			text-align: initial;
 
 		}
 		.icon{
@@ -103,7 +104,7 @@ header{
 			position: absolute;
 			right: 0;
 			top: 0;
-			margin: 0px;
+			
 		}
 		
 		
@@ -274,19 +275,31 @@ footer{
 @media screen and (min-width: 768px) {
 
 body{ 
-	header{ 		
+	header{ 
+				
 		nav{ 
-			.name{
-				width: 40%;
+			display: flex;
+			justify-content: space-between;
+			
+			
+			 .name{
+				width: 30%;
+				text-align: none;
+				
 			}
 			a{
-				font-size: 1.5em;
+				font-size: 1.25em;
+				text-align: none;
 			}
-			#myLinks{		
+			.icon i{
+				display: none;
+			}
+			#myLinks{	
+			display: flex;
+			justify-content: space-between;	
+			width: 60%;
 			
-		
-		
-			width: 35%;
+			
 			}
 		}
 	}/*header end*/
@@ -377,9 +390,6 @@ body{
 				}
 				#myLinks{		
 				
-			
-			
-				width: 25%;
 				}
 			}
 		}/*header end*/
