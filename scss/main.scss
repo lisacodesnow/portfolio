@@ -68,12 +68,21 @@ header{
 		position: relative;
 		width: 85%;
 	
-		
-		 #myLinks{
-			display: none
-
-				
+#myLinks{
+	display: flex;
+			justify-content: space-between;	
+			width: 60%;
 		}
+		
+		#show-links {
+			font-family: $paragraph-font;	
+			font-size: 1.10em;
+			color: white;
+			display: block;
+			margin: 50px 0px;
+			text-align: center;
+		}
+		
 		
 		a{
 			font-family: $paragraph-font;	
@@ -106,8 +115,7 @@ header{
 			top: 0;
 			
 		}
-		
-		
+	
 	}
 } /*header end*/
 

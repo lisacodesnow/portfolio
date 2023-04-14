@@ -59,7 +59,17 @@ body header nav {
   width: 85%;
 }
 body header nav #myLinks {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+body header nav #show-links {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  color: white;
+  display: block;
+  margin: 50px 0px;
+  text-align: center;
 }
 body header nav a {
   font-family: "Raleway", sans-serif;
