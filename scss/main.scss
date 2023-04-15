@@ -69,7 +69,7 @@ header{
 	#myLinks{
 		display: none;
 		}
-		
+	
 		a{
 			font-family: $paragraph-font;	
 			font-size: 1.10em;
@@ -287,7 +287,7 @@ body{
 				display: none;
 			}
 			#myLinks{	
-			display: flex;
+			display: flex !important;
 			justify-content: space-between;	
 			width: 60%;
 			

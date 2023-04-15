@@ -28,10 +28,20 @@ console.log(navLinks);
        
         if (navLinks.style.display === "block") {
           navLinks.style.display = "none";
-        } else {
+        } else  {
           navLinks.style.display = "block";
         }
+      
+    }
+    mediaQuery.addEventListener("resize", () =>{
+      if (mediaQuery.matches){
+        navLinks.style.display = "flex";
+      }else{
+        navLinks.style.direction= "none";
       }
+  })
+    
+ 
 
 /*hamburgerIcon.addEventListener("click", ()=>{
     if (myLinks.style.display === "flex") {

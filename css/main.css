@@ -219,7 +219,7 @@ body footer .copyright .content_container .copyright_date {
     display: none;
   }
   body header nav #myLinks {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     width: 60%;
   }
