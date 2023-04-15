@@ -61,28 +61,14 @@ header{
 	top: 0px;
 	
 	nav{
-		
-	
 		margin:40px 0px;
 		background-color:black;
 		position: relative;
 		width: 85%;
 	
-#myLinks{
-	display: flex;
-			justify-content: space-between;	
-			width: 60%;
+	#myLinks{
+		display: none;
 		}
-		
-		#show-links {
-			font-family: $paragraph-font;	
-			font-size: 1.10em;
-			color: white;
-			display: block;
-			margin: 50px 0px;
-			text-align: center;
-		}
-		
 		
 		a{
 			font-family: $paragraph-font;	
@@ -118,8 +104,6 @@ header{
 	
 	}
 } /*header end*/
-
-
 
 main{
 	display: flex;

@@ -6,9 +6,9 @@ const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
 console.log(navLinks);
 
 
-hamburgerIcon.addEventListener("click", () =>{
+/*hamburgerIcon.addEventListener("click", () =>{
   navLinks.className.toggle("myLinks")
-})
+})*/
 
 
 /*window.onscroll = function() {myFunction()};
@@ -24,14 +24,14 @@ hamburgerIcon.addEventListener("click", () =>{
 			  }
 			}*/
 
-     /* function myFunction() {
+      function myFunction() {
        
         if (navLinks.style.display === "block") {
           navLinks.style.display = "none";
         } else {
           navLinks.style.display = "block";
         }
-      }*/
+      }
 
 /*hamburgerIcon.addEventListener("click", ()=>{
     if (myLinks.style.display === "flex") {
