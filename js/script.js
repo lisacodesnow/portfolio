@@ -2,13 +2,6 @@ const navLinks = document.getElementById("myLinks");
 const hamburgerIcon = document.querySelector("i")
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
-//console.log(mediaQuery)
-console.log(navLinks);
-
-
-/*hamburgerIcon.addEventListener("click", () =>{
-  navLinks.className.toggle("myLinks")
-})*/
 
 
 /*window.onscroll = function() {myFunction()};
@@ -33,35 +26,8 @@ console.log(navLinks);
         }
       
     }
-    mediaQuery.addEventListener("resize", () =>{
-      if (mediaQuery.matches){
-        navLinks.style.display = "flex";
-      }else{
-        navLinks.style.direction= "none";
-      }
-  })
-    
+   
  
 
-/*hamburgerIcon.addEventListener("click", ()=>{
-    if (myLinks.style.display === "flex") {
-        myLinks.style.display = "none";
-      } else {
-        myLinks.style.display = "flex";
-      }
 
-
-});*/
-
-/*const noHamburgerMenu = () =>{
-
-    if (mobileMediaQuery.matches) { // If media query matches
-        document.body.style.backgroundColor = "yellow";
-      }
-    else if(mediaQuery.matches){
-      document.body.style.backgroundColor="black"
-    }
-};
-
-noHamburgerMenu();*/
 
