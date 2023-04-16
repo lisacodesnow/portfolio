@@ -14,6 +14,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="../js/script.js" defer></script>
 
 
 </head>
@@ -25,31 +26,19 @@
 			
 				<a href="../index.html" class="name" > Lisa Thompson </a>
 				
-			<div id="myLinks">
-				<a href="../index.html">Portfolio</a>
-				<a href="../about/index.html">About</a>
-				
-			</div>
-			
-		</nav>
+				<div id="myLinks">
+					<a href="../index.html">Portfolio</a>
+					<a href="../index.html#skills_anchor">Skills</a>
+					<a href="../about/index.html">About</a>
+					<a href="../about/index.html#resume_anchor">Resume</a>
+					<a href="index.html">Contact</a>
+					
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				  </a>
+			</nav>
 
-		<!--sticky header javascript-->
-		<script>
-			window.onscroll = function() {myFunction()};
-			
-			var header = document.querySelector("header");
-			var sticky = header.offsetTop;
-			
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			  } else {
-				header.classList.remove("sticky");
-			  }
-			}
-		</script>
-	
-	
 </header>
 	<main>
 		<section class="contact">
