@@ -17,9 +17,6 @@ const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
 			  }
 			}*/
 
-<<<<<<< HEAD
-/*const noHamburgerMenu = () =>{
-=======
       function myFunction() {
        
         if (navLinks.style.display === "block") {
@@ -31,11 +28,6 @@ const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
     }
    
  
->>>>>>> rough_draft
 
 
 
-<<<<<<< HEAD
-noHamburgerMenu();*/
-=======
->>>>>>> rough_draft
