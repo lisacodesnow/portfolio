@@ -30,6 +30,9 @@
   font-size: 3em;
   padding: 40px 0px;
 }
+.portfolio_pieces .challenge {
+  margin: 30px 0px 0px;
+}
 .portfolio_pieces h2 {
   font-size: 2em;
   text-decoration: underline;

@@ -8,6 +8,13 @@
 .about .intro_words {
   margin-top: -10px;
 }
+.about .intro_words a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+.about .my_experiences, .about .education, .about .skills, .about .fun_fact {
+  margin-top: 80px;
+}
 .about h2 {
   font-size: 1.5em;
   text-decoration: underline;
@@ -28,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 55px;
 }
 .about .resume a {
   text-decoration: none;
@@ -73,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 55px;
   }
   .about .resume a {
     text-decoration: none;
@@ -82,5 +90,13 @@
   }
   .about .resume a:hover {
     color: red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body main .about .content_container {
+    margin: 0px 200px;
+  }
+  body main .about .content_container .resume {
+    margin: 75px 0px;
   }
 }
