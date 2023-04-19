@@ -6,23 +6,6 @@ $accent-blue: #374EFF;
 $heading-font: 'Playfair Display', serif;
 $paragraph-font: 'Raleway', sans-serif;
 
-   .back_to_portfolio{
-                
-                padding-bottom: 50px;
-                display: flex;
-                width: 100%;
-                margin-left:50px;
-                    a{
-                    text-decoration: none; 
-                    color:$off-white-primary;  
-                   
-                } 
-                
-                a:hover{
-                    
-                    color: $accent-blue;
-                }
-            }
         
    .portfolio_pieces{
         ul{
@@ -48,9 +31,10 @@ $paragraph-font: 'Raleway', sans-serif;
                     font-size: 3em;
                     padding:40px 0px;
                 }
-                .challenge{
-                    margin:30px 0px 0px;
+                .challenge, .solution, .project_skills,.project_tools{
+                    margin:100px 0px 0px;
                 }
+
                 h2{
                     font-size: 2em;
                     text-decoration: underline;
@@ -105,14 +89,6 @@ $paragraph-font: 'Raleway', sans-serif;
               } /* portfolio pieces end */
 
  @media screen and (min-width: 768px) {
-    .back_to_portfolio{
-       
-        margin-left:110px;
-            a{
-            font-size: 1.25em; 
-           
-        } 
-    }
  
  .portfolio_pieces{
 
@@ -166,4 +142,35 @@ $paragraph-font: 'Raleway', sans-serif;
           } /* portfolio pieces end */
         
         }
+}
+
+@media screen and (min-width: 1024px) {
+
+.individual_project_pages{ 
+    .content_container{
+
+    .portfolio_pieces{
+    .solution{
+
+    .image_words_flex{
+        display: grid;
+       
+
+        p, figure{
+           
+        }
+
+        figure{
+            
+           
+        }
+    }
+   
+    }
+    }
+    }
+
+}
+
+
 }

@@ -37,26 +37,6 @@
 			  </a>
 		</nav>
 
-		<div class="back_to_portfolio">
-			<a href="../index.html" > back to portfolio </a>
-			</div>
-	
-		<!--sticky header javascript-->
-		<script>
-			window.onscroll = function() {myFunction()};
-			
-			var header = document.querySelector("header");
-			var sticky = header.offsetTop;
-			
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			  } else {
-				header.classList.remove("sticky");
-			  }
-			}
-		</script>
-	
 </header>
 	<main>
 
@@ -81,6 +61,8 @@
 					</div>
 					<div class="solution">
 						<h2>Solution</h2>
+
+						<div class="image_words_flex">
 						<p>When beginning this project, I was prepared to code the desktop version first and was worried about how I would convert all the content from a big desktop to a tiny, mobile screen. <br>
 
 							<br> One of the most popular ways users view the web is on their phones. So to optimize the website for mobile use, I coded the CSS mobile-first. <br>
@@ -95,6 +77,9 @@
 							<p>After the mobile version is coded, I added media queries 
 								for the tablet and desktop versions.
 							</p>
+						
+							
+
 								<figure> <img src="../images/unplugged_retreat/unplugged_tablet_query.png"  alt="table query photo"> </figure>
 								
 								<figure> <img src="../images/unplugged_retreat/unplugged_desktop_query.png"  alt="desktop query photo"> </figure>
@@ -104,7 +89,7 @@
 								<br> To understand the basics of what’s needed for a project is very helpful before over complicating the process and adding more sophisticated code. 
 
 							</p>
-					
+					</div>
 					</div>
 					<div class="project_skills">
 						<h2>Skills</h2>
