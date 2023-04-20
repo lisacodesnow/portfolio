@@ -152,16 +152,25 @@ $paragraph-font: 'Raleway', sans-serif;
     .portfolio_pieces{
     .solution{
 
-    .image_words_flex{
+    .image_words{
         display: grid;
-       
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 200px;
 
-        p, figure{
-           
+        p{
+           grid-column: 1;
+           grid-row: 1;
+           margin: 0px
+            
         }
 
         figure{
+            grid-column: 2;
+            grid-row: auto;
             
+            margin: 0px;
+            width: 300px;
            
         }
     }
