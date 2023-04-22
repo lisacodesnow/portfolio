@@ -6,23 +6,6 @@ $accent-blue: #374EFF;
 $heading-font: 'Playfair Display', serif;
 $paragraph-font: 'Raleway', sans-serif;
 
-   .back_to_portfolio{
-                
-                padding-bottom: 50px;
-                display: flex;
-                width: 100%;
-                margin-left:50px;
-                    a{
-                    text-decoration: none; 
-                    color:$off-white-primary;  
-                   
-                } 
-                
-                a:hover{
-                    
-                    color: $accent-blue;
-                }
-            }
         
    .portfolio_pieces{
         ul{
@@ -102,14 +85,6 @@ $paragraph-font: 'Raleway', sans-serif;
               } /* portfolio pieces end */
 
  @media screen and (min-width: 768px) {
-    .back_to_portfolio{
-       
-        margin-left:110px;
-            a{
-            font-size: 1.25em; 
-           
-        } 
-    }
  
  .portfolio_pieces{
 
