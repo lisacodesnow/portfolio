@@ -1,19 +1,9 @@
-.back_to_portfolio {
-  padding-bottom: 50px;
-  display: flex;
-  width: 100%;
-  margin-left: 50px;
+.portfolio_pieces ul {
+  margin-top: -15px;
 }
-.back_to_portfolio a {
-  text-decoration: none;
-  color: #F2F2F2;
-}
-.back_to_portfolio a:hover {
-  color: red;
-}
-
 .portfolio_pieces li {
   font-size: 1em;
+  margin-bottom: 10px;
 }
 .portfolio_pieces figure {
   padding: 10px 0px;
@@ -26,15 +16,17 @@
   font-size: 3em;
   padding: 40px 0px;
 }
+.portfolio_pieces .challenge, .portfolio_pieces .solution, .portfolio_pieces .project_skills, .portfolio_pieces .project_tools {
+  margin: 100px 0px 0px;
+}
 .portfolio_pieces h2 {
   font-size: 2em;
   text-decoration: underline;
   line-height: 1em;
-  margin: 1em 0em;
+  margin: 20px 0px;
 }
 .portfolio_pieces h3 {
-  font-size: 1.5em;
-  text-decoration: underline;
+  font-size: 1em;
 }
 .portfolio_pieces p {
   margin: 40px 0px;
@@ -50,7 +42,7 @@
   justify-content: center;
   padding: 20px;
   border-radius: 50px;
-  background-color: red;
+  background-color: #374EFF;
   text-align: center;
   margin-top: 50px;
 }
@@ -63,23 +55,17 @@
   background-color: #F2F2F2;
 }
 .portfolio_pieces .live_page:hover a {
-  color: red;
+  color: #374EFF;
 }
 
 /* portfolio pieces end */
 @media screen and (min-width: 768px) {
-  .back_to_portfolio {
-    margin-left: 110px;
-  }
-  .back_to_portfolio a {
-    font-size: 1.25em;
-  }
   .portfolio_pieces {
     /* portfolio pieces end */
   }
   .portfolio_pieces li {
-    font-size: 1em;
-    margin: 0px 140px;
+    font-size: 1.25em;
+    margin: 0px 140px 10px;
   }
   .portfolio_pieces figure {
     padding: 10px 0px;
@@ -100,7 +86,7 @@
   }
   .portfolio_pieces h3 {
     font-size: 1.5em;
-    text-decoration: underline;
+    margin: 25px 140px;
   }
   .portfolio_pieces p {
     font-size: 1.5em;
@@ -111,5 +97,24 @@
     width: 200px;
     padding: 20px 0px;
     margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .individual_project_pages .content_container .portfolio_pieces .solution .image_words {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 200px;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution .image_words p {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0px;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution .image_words figure {
+    grid-column: 2;
+    grid-row: auto;
+    margin: 0px;
+    width: 300px;
   }
 }
