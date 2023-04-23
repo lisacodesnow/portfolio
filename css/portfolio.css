@@ -78,12 +78,17 @@
   .individual_project_pages .content_container .portfolio_pieces .solution p, .individual_project_pages .content_container .portfolio_pieces .solution figure {
     width: 48%;
   }
+  .individual_project_pages .content_container .portfolio_pieces .solution li {
+    font-size: 1.25em;
+    padding: 0px;
+    width: 40%;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution ul {
+    margin: 0px;
+    padding: 0px;
+  }
   .individual_project_pages .content_container .portfolio_pieces .solution figure {
     margin: 40px 0px;
-  }
-  .individual_project_pages .content_container .portfolio_pieces li {
-    font-size: 1.25em;
-    margin: 0px 140px 10px;
   }
   .individual_project_pages .content_container h1 {
     font-size: 3.5em;

@@ -113,16 +113,25 @@ $paragraph-font: 'Raleway', sans-serif;
 
         }
 
+        li{
+        font-size: 1.25em;
+        padding:0px;
+        width:40%;
+    }
+
+        ul{
+            margin:0px;
+          
+            padding:0px;
+        }
+
         figure{
             margin: 40px 0px;
         }
 
     }/*solution end*/
 
-    li{
-        font-size: 1.25em;
-        margin: 0px 140px 10px;
-    }
+    
 
             }
             h1{
