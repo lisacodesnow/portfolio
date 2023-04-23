@@ -5,16 +5,13 @@
   font-size: 1em;
   margin-bottom: 10px;
 }
-.portfolio_pieces figure {
-  padding: 10px 0px;
-}
 .portfolio_pieces figure img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 .portfolio_pieces h1 {
   font-size: 3em;
-  padding: 40px 0px;
+  margin: 60px 0px;
 }
 .portfolio_pieces .challenge, .portfolio_pieces .solution, .portfolio_pieces .project_skills, .portfolio_pieces .project_tools {
   margin: 100px 0px 0px;
@@ -27,6 +24,7 @@
 }
 .portfolio_pieces h3 {
   font-size: 1em;
+  line-height: 2em;
 }
 .portfolio_pieces p {
   margin: 40px 0px;
@@ -60,44 +58,63 @@
 
 /* portfolio pieces end */
 @media screen and (min-width: 768px) {
-  .portfolio_pieces {
-    /* portfolio pieces end */
+  .individual_project_pages .content_container {
+    width: 90%;
+    margin: 0px auto 55px !important;
   }
-  .portfolio_pieces li {
+  .individual_project_pages .content_container .portfolio_pieces {
+    /*solution end*/
+  }
+  .individual_project_pages .content_container .portfolio_pieces .project_info p, .individual_project_pages .content_container .portfolio_pieces .challenge p {
+    width: 75%;
+    margin: 40px auto 0px;
+    text-align: center;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution p, .individual_project_pages .content_container .portfolio_pieces .solution figure {
+    width: 48%;
+  }
+  .individual_project_pages .content_container .portfolio_pieces .solution li {
     font-size: 1.25em;
-    margin: 0px 140px 10px;
+    padding: 0px;
+    width: 40%;
   }
-  .portfolio_pieces figure {
-    padding: 10px 0px;
-    margin: 0px 140px;
+  .individual_project_pages .content_container .portfolio_pieces .solution ul {
+    margin: 0px;
+    padding: 0px;
   }
-  .portfolio_pieces figure img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  .individual_project_pages .content_container .portfolio_pieces .solution figure {
+    margin: 40px 0px;
   }
-  .portfolio_pieces h1 {
+  .individual_project_pages .content_container h1 {
     font-size: 3.5em;
-    padding: 40px 0px;
-    margin: 0px 140px;
+    text-align: center;
+    margin: 100px 0px;
   }
-  .portfolio_pieces h2 {
+  .individual_project_pages .content_container h2 {
     font-size: 2.5em;
-    margin: 16px 140px;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px;
   }
-  .portfolio_pieces h3 {
+  .individual_project_pages .content_container h3 {
     font-size: 1.5em;
-    margin: 25px 140px;
+    text-align: center;
   }
-  .portfolio_pieces p {
+  .individual_project_pages .content_container p {
     font-size: 1.5em;
     line-height: 1.5em;
-    margin: 40px 140px;
   }
-  .portfolio_pieces .live_page_button .live_page {
+  .individual_project_pages .content_container .live_page_button .live_page {
     width: 200px;
     padding: 20px 0px;
     margin-top: 70px;
   }
+  /* portfolio pieces end */
 }
 @media screen and (min-width: 1024px) {
   .individual_project_pages .content_container .portfolio_pieces .solution .image_words {
