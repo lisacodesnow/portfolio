@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<title>Sticky Notes App</title>
+	
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/portfolio.css">
+	<!--font awesome-->
+	<script src="https://kit.fontawesome.com/d1e454272d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+	
+	<meta charset="utf-8">
+	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="../js/script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		
+		<nav>
+			
+				 <a href="../index.html" class="name" > Lisa Thompson </a>
+				
+				 <div id="myLinks">
+					<a href="../index.html">Portfolio</a>
+					<a href="../index.html#skills_anchor">Skills</a>
+					<a href="../about/index.html">About</a>
+					<a href="../about/index.html#resume_anchor">Resume</a>
+					<a href="../contact/index.html">Contact</a>
+					
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="hamburger menu icon">
+					<i class="fa fa-bars"></i>
+				  </a>
+			</nav>
+</header>
+	<main>
+
+		<section class="individual_project_pages">
+			<div class="content_container"> 
+				<div class="portfolio_pieces">
+					
+					<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_mainimage.png"  alt="sticky notes photo"> </figure>
+					<h1>Sticky Notes App</h1>
+					<div class="project_info">
+						<h2>Overview</h2>
+						<p>The Super Sticky Notes app is an interactive app that allows users to create “sticky” notes
+                             on the computer to keep track of to-do items. React is using JSX to render app's UI and 
+                             mounting components to save the user’s items after they close the browser.
+						</p>
+					</div>
+					<div class=" challenge">
+						<h2>Challenge</h2>
+						<p>
+							
+							The challenge I had was knowing how to edit 
+                            certain fields of the note, either the title or description.
+
+						</p>
+					</div>
+					<div class="solution">
+						<h2>Solution</h2>
+						<p>The physical note is divided between two input sections: the title, and description. <br>
+
+							<br>But the actual makeup of the notes object has four key-value
+                             pairs that are needed for it to be created: id, title, description 
+                             and doesMatchSearch.
+
+						</p>							
+
+							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_keyvalue_pairs.png"  alt="key value pairs"> </figure>
+							
+                            <p>The note's id is unique and is defined by the date of the note's creation. 
+                                While it's a good way to find a note that needs to be edited, the id alone 
+                                won’t allow me to edit the title and description field.
+
+							</p>
+
+                            <p><b>The solution to editing either or both the description and title 
+                                is by utilizing keys.</b> Keys like id’s are assigned as unique identifiers
+                                 to elements.</p>
+
+							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_key_names.png"  alt="key names"> </figure>
+							
+                            <p>In this case, two keys are created, “title” and “description”. These keys along with the note’s id are 
+                                sent to the editingNotes function that uses them to know if either title or description field need to 
+                                change.</p>
+
+
+							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_sentto_function.png"  alt="keys sent to function"> </figure>
+						
+					</div>
+					<div class="project_skills">
+						<h2>Skills</h2>
+						<h3> React, ES6, JSX, Managing data flow, Manipulating the DOM</h3>
+					</div>
+					<div class="project_tools">
+						<h2> Tools</h2>
+						<h3>Git, Github, Visual Studio Code</h3>
+					</div>
+					<div class="live_page_button">
+					<div class="live_page">
+					<a href="
+					https://r2b0jg.csb.app/
+					" target="_blank">Go to Live Page</a>
+					</div>
+					</div>
+				</div><!--portfolio_pieces-->
+			</div> <!--content_container-->
+		</section>
+		
+	</main>
+	<footer>
+		<section class="copyright">
+			<div class="content_container">
+				
+				<h2 class="copyright_date"> Copyright 2023</h2>
+				<h2> Lisa Thompson</h2>
+
+				
+			</div> <!--content_container-->
+			
+		</section>
+	</footer>
+</body>
+
+</html>

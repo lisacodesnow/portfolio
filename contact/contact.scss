@@ -11,7 +11,8 @@ main{
 	align-items: center;
 .contact{
 	
-	width: 370px;
+	min-width: 350px;
+	max-width: 500px;
 	margin-top: 50px;
 	.contact_name{
 		
@@ -32,7 +33,7 @@ main{
 			font-size: 1.5em;
 		}
 		
-	.contact_information{
+	#email_connect{
 		
 		display: flex;
 		flex-direction: column;
@@ -41,6 +42,8 @@ main{
 		width: 50%;
 		border-right: 1px solid $off-white-primary;
 		padding-right: 15px;
+		text-decoration: none;
+		color: $off-white-primary;
 
 		
 		.lets_connect{
@@ -54,8 +57,6 @@ main{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		
-		
 
 		h2{
 			font-size: 1em;
@@ -67,6 +68,8 @@ main{
 		}
 		}
 	}	
+
+
 	.social_media{
 		display: flex;
 		flex-direction: column;

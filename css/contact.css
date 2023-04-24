@@ -4,7 +4,8 @@ main {
   /*contact end*/
 }
 main .contact {
-  width: 370px;
+  min-width: 350px;
+  max-width: 500px;
   margin-top: 50px;
   /*content container end*/
 }
@@ -25,7 +26,7 @@ main .contact .content_container {
 main .contact .content_container h1 {
   font-size: 1.5em;
 }
-main .contact .content_container .contact_information {
+main .contact .content_container #email_connect {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,21 +34,23 @@ main .contact .content_container .contact_information {
   width: 50%;
   border-right: 1px solid #F2F2F2;
   padding-right: 15px;
+  text-decoration: none;
+  color: #F2F2F2;
 }
-main .contact .content_container .contact_information .lets_connect {
+main .contact .content_container #email_connect .lets_connect {
   margin-bottom: 35px;
   text-align: center;
 }
-main .contact .content_container .contact_information .email {
+main .contact .content_container #email_connect .email {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .contact .content_container .contact_information .email h2 {
+main .contact .content_container #email_connect .email h2 {
   font-size: 1em;
 }
-main .contact .content_container .contact_information .email h3 {
+main .contact .content_container #email_connect .email h3 {
   font-size: 1em;
   margin-top: 15px;
 }

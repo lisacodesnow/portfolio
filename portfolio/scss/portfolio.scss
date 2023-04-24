@@ -95,9 +95,14 @@ $paragraph-font: 'Raleway', sans-serif;
 
  .portfolio_pieces{
 
+    figure{
+        width: 75%;
+        margin: 0px auto;
+    }
+
     .project_info, .challenge{
         p{
-            width:75%;
+            width:60%;
             margin: 40px auto 0px;
             text-align: center;
 
@@ -108,25 +113,26 @@ $paragraph-font: 'Raleway', sans-serif;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        p, figure{
+        p, figure, .ordered_list{
             width: 48%;
 
+        }
+
+        .ordered_list{
+            p{
+                width: 100%;
+            }
         }
 
         li{
         font-size: 1.25em;
         padding:0px;
-        width:40%;
+       
     }
 
         ul{
-            margin:0px;
-          
+            margin:40px 0px;
             padding:0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
         }
 
         figure{
