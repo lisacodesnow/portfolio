@@ -123,6 +123,10 @@ $paragraph-font: 'Raleway', sans-serif;
             margin:0px;
           
             padding:0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
         }
 
         figure{
@@ -150,14 +154,14 @@ $paragraph-font: 'Raleway', sans-serif;
                
             }
             h3{
-                font-size: 1.5em;
+                font-size: 1.25em;
                 text-align: center;
                
                 
             }
             p{
               
-                font-size: 1.5em;
+                font-size: 1.25em;
                 line-height: 1.5em;
                 
             }
@@ -182,32 +186,9 @@ $paragraph-font: 'Raleway', sans-serif;
     .content_container{
 
     .portfolio_pieces{
-    .solution{
-
-    .image_words{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-bottom: 200px;
-
-        p{
-           grid-column: 1;
-           grid-row: 1;
-           margin: 0px
-            
+        p, h3{
+            font-size: 1.5em;
         }
-
-        figure{
-            grid-column: 2;
-            grid-row: auto;
-            
-            margin: 0px;
-            width: 300px;
-           
-        }
-    }
-   
-    }
     }
     }
 
