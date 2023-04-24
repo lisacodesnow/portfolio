@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang = "en">
 <head>
-	<title>Sticky Note</title>
+	<title>Note Taking App</title>
 	
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/portfolio.css">
@@ -32,7 +32,7 @@
 					<a href="../contact/index.html">Contact</a>
 					
 				</div>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="hamburger menu icon">
 					<i class="fa fa-bars"></i>
 				  </a>
 			</nav>
@@ -45,7 +45,11 @@
 				<div class="portfolio_pieces">
 					
 					<figure> <img src="../images/note_taking_app/note_taking_app_mainimage.png"  alt=" note taking app project photo"> </figure>
+<<<<<<< HEAD:portfolio/sitcky_note.html
 					<h1>Sticky Note</h1>
+=======
+					<h1>Note Taking App</h1>
+>>>>>>> rough_draft:portfolio/note_taking.html
 					<div class="project_info">
 						<h2>Overview</h2>
 						<p>The Note Taking app is an interactive interface that allows users to create notes that are displayed on the screen.
@@ -67,27 +71,30 @@
 
 							<figure> <img src="../images/note_taking_app/note_taking_app_state_code.png"  alt="state code photo"> </figure>
 							<p>Utilizing event listeners and handlers is how I made the app interactive to display user’s typed words.<br>
-
-								<br>Event listeners listen for an event to happen, i.e. typing, and the event handler is triggered once the text is typed or button is hit. 
-								The event handler actually updates the state so the changes can be displayed on the screen.<br>
+							</p>
+								<p>Event listeners listen for an event to happen, i.e. typing, and the event handler is triggered once the text is typed or button is hit. 
+								The event handler actually updates the state so the changes can be displayed on the screen.</p>
 								
-								<br>Two event listeners and handlers were used:</p>
-								<ul>
-									<li>The <b>onChange listener </b>works with the input element and listens for a change in value, i.e. entering text. 
-										Once the text is typed it calls the updateChalk event handler.</li>
+								<p>Two event listeners and handlers were used. The onChange and onSubmit listeners. And the updateChalk
+									and updateNotes event handlers.
+								</p>
 								
-									<li>The <b>onSubmit listener</b> works with the form element and triggers
-										 the updateNotes event handler when pushing the submit button.</li>
+									<p>The <b>onChange listener </b>works with the input element and listens for a change in value, i.e. entering text. 
+										Once the text is typed it calls the updateChalk event handler.</p>
+								
+									<p>The <b>onSubmit listener</b> works with the form element and triggers
+										 the updateNotes event handler when pushing the submit button.</p>
 
-								</ul>
+								
+								
 							<figure><img src="../images/note_taking_app/note_taking_app_event_listener.png" alt="event listener photo"></figure>
-							<p>The two event handlers are functions that I created to update state:</p>
-							<ul>
-								<li>The <b>updateChalk event handler</b> updates the “chalk” property empty string. This property is what is used to show the user's typed words.
-								</li>
-								<li>The <b>updateNotes event handler</b> updates the “notes” property empty array. The array collects all the notes typed and submitted.
-								</li>
-							</ul>
+							<p>The two event handlers are functions that I created to update state.</p>
+							
+								<p>The <b>updateChalk event handler</b> updates the “chalk” property empty string. This property is what is used to show the user's typed words.
+								</p>
+								<p>The <b>updateNotes event handler</b> updates the “notes” property empty array. The array collects all the notes typed and submitted.
+								</p>
+							
 							<figure> <img src="../images/note_taking_app/note_taking_app_updating_state.png"  alt="event handler photo"> </figure>
 							<p>To accomplish app interactivity for users to experience is the rewarding part about coding.
 							</p>
@@ -107,8 +114,7 @@
 					</div>
 					<div class="live_page_button">
 					<div class="live_page">
-					<a href="
-					https://codesandbox.io/s/note-taking-app-tsew62?file=/src/index.js
+					<a href=" https://tsew62.csb.app/
 					" target="_blank">Go to Live Page</a>
 					</div>
 					</div>

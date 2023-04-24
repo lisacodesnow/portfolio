@@ -37,7 +37,10 @@
 					<i class="fa fa-bars"></i>
 				  </a>
 			</nav>
+<<<<<<< HEAD
 
+=======
+>>>>>>> rough_draft
 </header>
 	<main>
 		
@@ -47,12 +50,13 @@
 					
 					<figure> <img src="../images/github_repo/github_repo_mainimage.png"  alt="github repo gallery photo"> </figure>
 					<h1>Github Repo Gallery</h1>
-					<p class="project_info">
+					<div class="project_info">
 						<h2>Overview</h2>
 						<p>The GitHub Repo Gallery is a project that pulls data from my GitHub portfolio site. 
 						A gallery of repositories are created using API’s to fetch the GitHub data and CSS. 
 						The repositories can be searched through and once clicked can take the user to that GitHub’s repository.
 					</p>
+					</div>
 					<div class=" challenge">
 						<h2>Challenge</h2>
 						<p>
@@ -62,10 +66,11 @@
 					<div class="solution">
 						<h2>Solution</h2>
 						<p>Using the async function and then passing the API results to another function that handles the UI is how I was able to display the UI from the API’s.
-
-							Before adding JavaScript, the UI only displays elements from the HTML document. 
-							The CSS that’s needed is already written and will be added later by using the classList property in JavaScript.
-							</p>
+						</p>
+							<p>Before adding JavaScript, the UI only displays elements from the HTML document. 
+							The CSS that’s needed is already written and will be added later by using the classList 
+							property in JavaScript.</p>
+							
 
 							<figure> <img src="../images/github_repo/blank_github.png"  alt="blank repo photo"> </figure>
 							<p>There are two UI sections that need API’s, the user profile’s information and list of repositories.
@@ -74,9 +79,12 @@
 							<figure> <img src="../images/github_repo/github_userprofile.png"  alt="user profile UI photo"> </figure>
 							<p>For the user profile, the API is fetched with an async function. The results of the data are then passed to another function that handles the UI.<br>
 
-							<br> The data from the API is an object and the name, age, location, photo, and number of repositories are the properties used for the user profile.
+							</p>
+							
+							<p>The data from the API is an object and the name, age, location, photo, and number of repositories 
+								are the properties used for the user profile.</p>
 								
-								</p>
+								
 							
 								<figure> <img src="../images/github_repo/github_first_async_function.png"  alt="first async photo"> </figure>
 							<p>For the list of repositories UI, the repositories API is fetched with a different async function.

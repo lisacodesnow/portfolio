@@ -53,7 +53,7 @@ body header {
   top: 0px;
 }
 body header nav {
-  margin: 40px 0px;
+  margin: 40px 0px 0px;
   background-color: black;
   position: relative;
   width: 85%;
@@ -67,7 +67,7 @@ body header nav a {
   color: white;
   text-decoration: none;
   display: block;
-  margin: 50px 0px;
+  margin: 40px 0px;
   text-align: center;
 }
 body header nav a:hover {
@@ -110,6 +110,9 @@ body main .hero .intro h1 {
   line-height: 1.5em;
 }
 body main .projects_home_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* project box*/
 }
 body main .projects_home_page a {
@@ -126,7 +129,7 @@ body main .projects_home_page .project_box {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
   position: relative;
   /*img end*/
 }
@@ -134,7 +137,6 @@ body main .projects_home_page .project_box img {
   opacity: 1;
   display: block;
   transition: 0.5s ease;
-  backface-visibility: hidden;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -144,7 +146,7 @@ body main .projects_home_page .project_box .middle_text {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -153,6 +155,22 @@ body main .projects_home_page .project_box .middle_text {
 body main .projects_home_page .project_box .middle_text h2 {
   color: white;
   font-size: 1.5em;
+}
+body main .projects_home_page .project_box h3 {
+  margin: 30px 0px;
+  line-height: 1.5em;
+}
+body main .projects_home_page .project_box .live_page {
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #374EFF;
+  text-align: center;
+}
+body main .projects_home_page .project_box .live_page:hover {
+  background-color: #F2F2F2;
+}
+body main .projects_home_page .project_box .live_page:hover a {
+  color: #374EFF;
 }
 body main .projects_home_page .project_box:hover .middle_text {
   opacity: 1;
@@ -175,7 +193,7 @@ body main .skills_and_tools .skill_list h2 {
   margin: 20px;
 }
 body footer {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   /*contact end*/
 }
 body footer .copyright {
@@ -206,6 +224,7 @@ body footer .copyright .content_container .copyright_date {
   body header nav {
     display: flex;
     justify-content: space-between;
+    margin: 40px 0px;
   }
   body header nav .name {
     width: 30%;
@@ -232,17 +251,41 @@ body footer .copyright .content_container .copyright_date {
     font-size: 4em;
   }
   body main .projects_home_page {
-    /* project box*/
+    /* content container*/
   }
   body main .projects_home_page h1 {
     margin: 0px 0px 80px;
     font-size: 3em;
   }
-  body main .projects_home_page .project_box {
-    width: 65%;
+  body main .projects_home_page .content_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    /* project box*/
   }
-  body main .projects_home_page .project_box .middle_text h2 {
+  body main .projects_home_page .content_container .project_box {
+    width: 300px;
+    height: 600px;
+    margin: 50px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body main .projects_home_page .content_container .project_box img {
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .projects_home_page .content_container .project_box .middle_text {
+    top: 25%;
+  }
+  body main .projects_home_page .content_container .project_box .middle_text h2 {
     font-size: 2em;
+  }
+  body main .projects_home_page .content_container .project_box .project_description {
+    margin: 30px 50px;
+    text-align: center;
   }
   body main .skills_and_tools h1 {
     font-size: 3em;
@@ -280,14 +323,24 @@ body footer .copyright .content_container .copyright_date {
     font-size: 5em;
   }
   body main .projects_home_page {
+    /* content container*/
+  }
+  body main .projects_home_page .content_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 20px 20px;
     /* project box*/
   }
-  body main .projects_home_page h1 {
+  body main .projects_home_page .content_container h1 {
     margin: 0px 0px 80px;
     font-size: 3em;
   }
-  body main .projects_home_page .project_box .middle_text h2 {
-    font-size: 3em;
+  body main .projects_home_page .content_container .project_box .middle_text h2 {
+    font-size: 2em;
+  }
+  body main .projects_home_page .content_container .project_box .project_description {
+    text-align: center;
   }
   body main .skills_and_tools h1 {
     font-size: 3em;

@@ -37,26 +37,6 @@
 			  </a>
 		</nav>
 
-		<div class="back_to_portfolio">
-			<a href="../index.html" > back to portfolio </a>
-			</div>
-	
-		<!--sticky header javascript-->
-		<script>
-			window.onscroll = function() {myFunction()};
-			
-			var header = document.querySelector("header");
-			var sticky = header.offsetTop;
-			
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			  } else {
-				header.classList.remove("sticky");
-			  }
-			}
-		</script>
-	
 </header>
 	<main>
 
@@ -67,12 +47,13 @@
 					
 					<figure> <img src="../images/unplugged_retreat/unplugged_retreat_mainimage.png"  alt=" unplugged project photo"> </figure>
 					<h1>Unplugged Retreat</h1>
-					<p class="project_info">
+					<div class="project_info">
 						<h2>Overview</h2>
 						<p>The unplugged retreat project is my first three-page responsive website that I coded. 
 							A Photoshop design comp and flexbox was used for the layout. 
 							With media queries, this site adapts to mobile, tablet, and desktop screens.
 						</p>
+					</div>
 					<div class=" challenge">
 						<h2>Challenge</h2>
 						<p>
@@ -81,31 +62,42 @@
 					</div>
 					<div class="solution">
 						<h2>Solution</h2>
-						<p>When beginning this project, I was prepared to code the desktop version first and was worried about how I would convert all the content from a big desktop to a tiny, mobile screen. <br>
 
-							<br> One of the most popular ways users view the web is on their phones. So to optimize the website for mobile use, I coded the CSS mobile-first. <br>
-							
-							<br> Mobile-first is when the website is coded to fit a mobile screen first, then the tablet and desktop versions are coded afterward. It’s also a good way to see a simple version of the website before adding more code for tablet and desktop versions.
-						</p>							
+						<p>When beginning this project, I was prepared to code the desktop version first and was worried 
+							about how I would convert all the content from a big desktop to a tiny, mobile screen. <br>
 
 							<figure> <img src="../images/unplugged_retreat/unplugged_mobile_first.png"  alt="mobile first photo"> </figure>
-
-							<figure> <img src="../images/unplugged_retreat/unplugged_mobile_first_code.png"  alt="mobile first code photo"> </figure>
 							
+							<p> One of the most popular ways users view the web is on their phones. So to optimize the website for mobile use, I coded the CSS mobile-first. </p>
+							<figure> <img src="../images/unplugged_retreat/unplugged_mobile_first_code.png"  alt="mobile first code photo"> </figure>
+							<p> Mobile-first is when the website is 
+							coded to fit a mobile screen first, then the tablet and desktop versions are coded afterward. 
+						</p>	
+
+
+						<p>It’s also a good way to see a simple version of the website before adding more code 
+							for tablet and desktop versions.</p>
+
 							<p>After the mobile version is coded, I added media queries 
 								for the tablet and desktop versions.
 							</p>
+						
+							
+
 								<figure> <img src="../images/unplugged_retreat/unplugged_tablet_query.png"  alt="table query photo"> </figure>
 								
 								<figure> <img src="../images/unplugged_retreat/unplugged_desktop_query.png"  alt="desktop query photo"> </figure>
 							
 							<p>
 								Starting small allowed me to fix any issues I was having with my HTML and CSS before scaling the website to tablet and desktop versions. Especially when creating multiple pages, this method made coding more manageable.<br>
-								<br> To understand the basics of what’s needed for a project is very helpful before over complicating the process and adding more sophisticated code. 
+							</p>	
+							
+							<p> To understand the basics of what’s needed for a project is very helpful before over complicating the 
+								process and adding more sophisticated code. </p> 
 
-							</p>
-					
+							
 					</div>
+					
 					<div class="project_skills">
 						<h2>Skills</h2>
 						<h3> HTML5, CSS3, Flexbox, Media Queries</h3>

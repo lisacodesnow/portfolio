@@ -33,7 +33,7 @@
 					<a href="../contact/index.html">Contact</a>
 					
 				</div>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="hamburger menu icon">
 					<i class="fa fa-bars"></i>
 				  </a>
 			</nav>
@@ -47,13 +47,14 @@
 					
 					<figure> <img src="../images/guess_the_word/guess_the_word_mainimage.png"  alt="guess the word photo"> </figure>
 					<h1>Guess the Word</h1>
-					<p class="project_info">
+					<div class="project_info">
 						<h2>Overview</h2>
 						<p>Guess the Word is a word guessing game that requires players to guess letters, correctly or incorrectly, before they use their allotted guesses in order to win.
 						The guessed words are fetched from a text file and used randomly. 
 						This project uses vanilla JavaScript to check the user’s input to match it with the correct word.
 						
 						</p>
+					</div>
 					<div class=" challenge">
 						<h2>Challenge</h2>
 						<p>
@@ -71,22 +72,31 @@
 							</p>
 
 							<figure> <img src="../images/guess_the_word/guess_the_word_player_input.png"  alt="player input photo"> </figure>
+							
+							<div class="ordered_list">
 							<p>When the letters inputted and the player hits the guess button the following parts change:</p>
-								<ul>
+								
+							
+							<ul>
 									<li>Message to user that displays if the correct letter was guessed</li>
 									<li>The word in progress which is the word that is being guessed</li>
 									<li>Remaining guesses that the player has to either win or lose</li>
 									<li>Guessed letters so the player won't input the same letter</li>
 									<li>Text input where the player enters the letter</li>
 								</ul>
+
+							</div>
 							<figure> <img src="../images/guess_the_word/guess_the_word_changing_UI.png"  alt="changing UI photo"> </figure>
+							
+							<div class="ordered_list">
+
 							<p>
 								And then once the game is over and regardless if you won or loss the following parts also change: </p>
 								<ul>
 								<li> Congrats Message if the correct word is guessed</li>
 								<li>Play Again button appears</li>
 								</ul>
-								
+							</div>	
 							
 								<figure> <img src="../images/guess_the_word/guess_the_word_play_again.png"  alt="play again photo"> </figure>
 							<p>Tackling any project can be overwhelming, so having a strategy that outlines clear steps I need to take allows me to code a successful application.
