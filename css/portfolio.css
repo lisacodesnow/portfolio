@@ -72,7 +72,7 @@
   .individual_project_pages .content_container .portfolio_pieces .project_info p, .individual_project_pages .content_container .portfolio_pieces .challenge p {
     width: 60%;
     margin: 40px auto 0px;
-    text-align: center;
+    text-align: left;
   }
   .individual_project_pages .content_container .portfolio_pieces .solution {
     display: flex;

@@ -285,7 +285,7 @@ body footer .copyright .content_container .copyright_date {
   }
   body main .projects_home_page .content_container .project_box .project_description {
     margin: 30px 50px;
-    text-align: center;
+    text-align: left;
   }
   body main .skills_and_tools h1 {
     font-size: 3em;
@@ -338,9 +338,6 @@ body footer .copyright .content_container .copyright_date {
   }
   body main .projects_home_page .content_container .project_box .middle_text h2 {
     font-size: 2em;
-  }
-  body main .projects_home_page .content_container .project_box .project_description {
-    text-align: center;
   }
   body main .skills_and_tools h1 {
     font-size: 3em;
