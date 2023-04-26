@@ -1,3 +1,26 @@
+.portfolio_pieces .live_page_button_top {
+  display: flex;
+}
+.portfolio_pieces .live_page_button_top .live_page_top {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #374EFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.portfolio_pieces .live_page_button_top .live_page_top a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 1.25em;
+}
+.portfolio_pieces .live_page:hover {
+  background-color: #F2F2F2;
+}
+.portfolio_pieces .live_page:hover a {
+  color: #374EFF;
+}
 .portfolio_pieces ul {
   margin-top: -15px;
 }
@@ -64,6 +87,10 @@
   }
   .individual_project_pages .content_container .portfolio_pieces {
     /*solution end*/
+  }
+  .individual_project_pages .content_container .portfolio_pieces .live_page_button_top {
+    display: flex;
+    justify-content: center;
   }
   .individual_project_pages .content_container .portfolio_pieces figure {
     width: 75%;

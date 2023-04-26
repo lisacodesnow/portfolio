@@ -8,6 +8,38 @@ $paragraph-font: 'Raleway', sans-serif;
 
         
    .portfolio_pieces{
+
+    .live_page_button_top{
+
+        display: flex;
+        
+    .live_page_top{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 50px;
+        background-color: $accent-blue;
+        text-align: center;
+        margin-bottom: 40px;
+        
+        
+       
+        a{
+            text-decoration: none;
+           color: $off-white-primary;
+           font-size: 1.25em;
+ 
+        }
+
+    }
+    }
+    .live_page:hover {
+        background-color: $off-white-primary;
+       
+    }
+    .live_page:hover a{
+       color: $accent-blue;
+    }
         ul{
             margin-top: -15px;
         }
@@ -94,6 +126,12 @@ $paragraph-font: 'Raleway', sans-serif;
     margin: 0px auto 55px!important;
 
  .portfolio_pieces{
+
+    .live_page_button_top{
+
+        display: flex;
+        justify-content: center;
+    }
 
     figure{
         width: 75%;
