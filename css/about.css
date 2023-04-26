@@ -1,43 +1,46 @@
-.about figure {
+body main .about .content_container {
+  align-items: left !important;
+}
+body main .about .content_container figure {
   padding: 10px 0px;
 }
-.about h1 {
+body main .about .content_container h1 {
   font-size: 2em;
   padding: 40px 0px;
 }
-.about .intro_words {
+body main .about .content_container .intro_words {
   margin-top: -10px;
 }
-.about .intro_words a {
+body main .about .content_container .intro_words a {
   text-decoration: none;
   color: #F2F2F2;
 }
-.about .my_experiences, .about .education, .about .skills, .about .fun_fact {
+body main .about .content_container .my_experiences, body main .about .content_container .education, body main .about .content_container .skills, body main .about .content_container .fun_fact {
   margin-top: 80px;
 }
-.about h2 {
+body main .about .content_container h2 {
   font-size: 1.5em;
   text-decoration: underline;
   line-height: 1em;
   margin-bottom: 1em;
 }
-.about p {
+body main .about .content_container p {
   margin: 40px 0px;
   line-height: 1.5em;
   font-size: 1em;
 }
-.about h3 {
+body main .about .content_container h3 {
   margin-bottom: 20px;
   font-size: 1em;
   line-height: 1.5em;
 }
-.about .resume {
+body main .about .content_container .resume {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 55px;
 }
-.about .resume a {
+body main .about .content_container .resume a {
   text-decoration: none;
   color: #F2F2F2;
   text-align: center;
@@ -45,28 +48,47 @@
   border: 1px solid #374EFF;
   padding: 10px;
 }
-.about .resume a:hover {
+body main .about .content_container .resume a:hover {
   color: #374EFF;
 }
 
 @media screen and (min-width: 768px) {
   .about .content_container {
     width: 90%;
-    margin: 0px auto;
+    margin: 0px 200px;
   }
   .about .content_container figure {
     width: 60%;
-    padding: 10px 0px;
+    margin: 0px auto;
+  }
+  .about .content_container .about_me {
+    /* .flex_this{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         margin: 20px auto;
+
+         .my_experiences, .education, .skills, .fun_fact{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 48%;
+
+         p{
+             text-align: left;
+         }
+     }
+
+
+     }*/
   }
   .about .content_container .about_me h1 {
     font-size: 3em;
     padding: 0px;
     margin: 40px auto;
-    text-align: center;
   }
   .about .content_container .about_me .intro_words {
-    margin: 0px auto;
-    text-align: left;
     width: 60%;
   }
   .about .content_container .about_me h2 {
@@ -81,22 +103,6 @@
     line-height: 1.25em;
     font-size: 1.25em;
   }
-  .about .content_container .about_me .flex_this {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px auto;
-  }
-  .about .content_container .about_me .flex_this .my_experiences, .about .content_container .about_me .flex_this .education, .about .content_container .about_me .flex_this .skills, .about .content_container .about_me .flex_this .fun_fact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48%;
-  }
-  .about .content_container .about_me .flex_this .my_experiences p, .about .content_container .about_me .flex_this .education p, .about .content_container .about_me .flex_this .skills p, .about .content_container .about_me .flex_this .fun_fact p {
-    text-align: left;
-  }
   .about .content_container .about_me h3 {
     margin: 40px 0px;
     line-height: 1.25em;
@@ -104,7 +110,7 @@
   }
   .about .content_container .about_me .resume {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin: 30px 0px;
   }

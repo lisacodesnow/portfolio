@@ -5,8 +5,12 @@ $accent-blue: #374EFF;
 
 $heading-font: 'Playfair Display', serif;
 $paragraph-font: 'Raleway', sans-serif;
-
+body{
+    main{
 .about{
+
+    .content_container{
+        align-items: left!important;
 figure{
     padding:10px 0px;
 }
@@ -47,7 +51,7 @@ h3{
 }
 .resume{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 55px;
    
@@ -65,7 +69,9 @@ a:hover{
     color: $accent-blue;
 }
 }
-
+    }
+}
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -73,11 +79,11 @@ a:hover{
     .about{
         .content_container{
             width: 90%;
-            margin: 0px auto;
+            margin: 0px 200px;
             
         figure{
                     width: 60%;
-                    padding:10px 0px;
+                    margin: 0px auto;
                 }
 
             .about_me{
@@ -86,13 +92,11 @@ a:hover{
             font-size: 3em;
             padding: 0px;
             margin: 40px auto;
-            text-align: center;
             
         }
         
         .intro_words{
-        margin: 0px auto;
-        text-align: left;
+        
         width: 60%;
         }
         
@@ -111,7 +115,7 @@ a:hover{
             
         }
 
-        .flex_this{
+       /* .flex_this{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -130,7 +134,7 @@ a:hover{
         }
 
         
-        }
+        }*/
 
 
         
@@ -141,7 +145,7 @@ a:hover{
         }
         .resume{
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             margin: 30px 0px;
             
