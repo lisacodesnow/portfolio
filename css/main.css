@@ -155,8 +155,9 @@ body main .projects_home_page .project_box .middle_text h2 {
   font-size: 1.5em;
 }
 body main .projects_home_page .project_box h3 {
-  margin: 30px 0px;
+  margin: 50px auto;
   line-height: 1.5em;
+  width: 75%;
 }
 body main .projects_home_page .project_box .live_page {
   padding: 20px;
@@ -264,7 +265,7 @@ body footer .copyright .content_container .copyright_date {
   body main .projects_home_page .content_container .project_box {
     width: 300px;
     height: 600px;
-    margin: 50px 20px;
+    margin: 0px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -280,7 +281,7 @@ body footer .copyright .content_container .copyright_date {
     font-size: 1.5em;
   }
   body main .projects_home_page .content_container .project_box .project_description {
-    margin: 30px 50px;
+    width: 50%;
     text-align: left;
   }
   body main .skills_and_tools h1 {
@@ -331,6 +332,9 @@ body footer .copyright .content_container .copyright_date {
   body main .projects_home_page .content_container h1 {
     margin: 0px 0px 80px;
     font-size: 3em;
+  }
+  body main .projects_home_page .content_container .project_box {
+    flex-basis: 33%;
   }
   body main .projects_home_page .content_container .project_box .middle_text h2 {
     font-size: 1.5em;
