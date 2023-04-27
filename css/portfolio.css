@@ -13,7 +13,6 @@
 .portfolio_pieces .live_page_button_top .live_page_top a {
   text-decoration: none;
   color: #F2F2F2;
-  font-size: 1.25em;
 }
 .portfolio_pieces .live_page:hover {
   background-color: #F2F2F2;
@@ -56,7 +55,6 @@
 }
 .portfolio_pieces .live_page_button {
   display: flex;
-  justify-content: center;
 }
 .portfolio_pieces .live_page_button .live_page {
   display: flex;
@@ -70,7 +68,6 @@
 .portfolio_pieces .live_page_button .live_page a {
   text-decoration: none;
   color: #F2F2F2;
-  font-size: 1.25em;
 }
 .portfolio_pieces .live_page:hover {
   background-color: #F2F2F2;
@@ -92,14 +89,19 @@
     display: flex;
     justify-content: center;
   }
+  .individual_project_pages .content_container .portfolio_pieces .live_page_button_top a {
+    font-size: 1.25em;
+  }
   .individual_project_pages .content_container .portfolio_pieces figure {
     width: 75%;
     margin: 0px auto;
   }
-  .individual_project_pages .content_container .portfolio_pieces .project_info p, .individual_project_pages .content_container .portfolio_pieces .challenge p {
-    width: 60%;
-    margin: 40px auto 0px;
-    text-align: left;
+  .individual_project_pages .content_container .portfolio_pieces .project_info, .individual_project_pages .content_container .portfolio_pieces .challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
   }
   .individual_project_pages .content_container .portfolio_pieces .solution {
     display: flex;
@@ -142,10 +144,15 @@
     font-size: 1.25em;
     line-height: 1.5em;
   }
+  .individual_project_pages .content_container .live_page_button {
+    justify-content: center;
+  }
   .individual_project_pages .content_container .live_page_button .live_page {
-    width: 200px;
-    padding: 20px 0px;
+    padding: 20px;
     margin-top: 70px;
+  }
+  .individual_project_pages .content_container .live_page_button .live_page a {
+    font-size: 1.25em;
   }
   /* portfolio pieces end */
 }

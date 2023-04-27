@@ -27,7 +27,6 @@ $paragraph-font: 'Raleway', sans-serif;
         a{
             text-decoration: none;
            color: $off-white-primary;
-           font-size: 1.25em;
  
         }
 
@@ -84,7 +83,7 @@ $paragraph-font: 'Raleway', sans-serif;
                 .live_page_button{
 
                     display: flex;
-                    justify-content: center;
+                   
                 .live_page{
                     
                     display: flex;
@@ -100,8 +99,6 @@ $paragraph-font: 'Raleway', sans-serif;
                        
                         text-decoration: none;
                        color: $off-white-primary;
-                       font-size: 1.25em;
-                    
                         
                     }
                     
@@ -131,6 +128,10 @@ $paragraph-font: 'Raleway', sans-serif;
 
         display: flex;
         justify-content: center;
+
+        a{
+            font-size: 1.25em;
+        }
     }
 
     figure{
@@ -139,10 +140,14 @@ $paragraph-font: 'Raleway', sans-serif;
     }
 
     .project_info, .challenge{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin:auto;
         p{
-            width:60%;
-            margin: 40px auto 0px;
-            text-align: left;
+            
 
         }
     }
@@ -211,10 +216,15 @@ $paragraph-font: 'Raleway', sans-serif;
             }
             
           .live_page_button{
+
+            justify-content: center;
           .live_page{
-            width: 200px;
-            padding: 20px 0px;
+            padding: 20px;
             margin-top: 70px;
+
+            a{
+                font-size: 1.25em;
+            }
            
           }
                   
