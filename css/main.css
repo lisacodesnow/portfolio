@@ -263,12 +263,13 @@ body footer .copyright .content_container .copyright_date {
     /* project box*/
   }
   body main .projects_home_page .content_container .project_box {
-    width: 300px;
+    width: 400px;
     height: 600px;
     margin: 0px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-basis: 33%;
   }
   body main .projects_home_page .content_container .project_box img {
     width: 300px;
