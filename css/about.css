@@ -1,6 +1,3 @@
-body main .about .content_container {
-  align-items: left !important;
-}
 body main .about .content_container figure {
   padding: 10px 0px;
 }
@@ -55,13 +52,15 @@ body main .about .content_container .resume a:hover {
 @media screen and (min-width: 768px) {
   .about .content_container {
     width: 90%;
-    margin: 0px 200px;
+    margin: 0px auto;
   }
   .about .content_container figure {
     width: 60%;
-    margin: 0px auto;
   }
   .about .content_container .about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* .flex_this{
          display: flex;
          flex-direction: row;
@@ -88,7 +87,11 @@ body main .about .content_container .resume a:hover {
     padding: 0px;
     margin: 40px auto;
   }
-  .about .content_container .about_me .intro_words {
+  .about .content_container .about_me .intro_words,
+  .about .content_container .about_me .skills,
+  .about .content_container .about_me .education,
+  .about .content_container .about_me .my_experiences,
+  .about .content_container .about_me .fun_fact {
     width: 60%;
   }
   .about .content_container .about_me h2 {
@@ -125,7 +128,19 @@ body main .about .content_container .resume a:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  body main .about .content_container .resume {
+  body main .about .content_container {
+    align-items: flex-start;
+  }
+  body main .about .content_container figure {
+    width: 40%;
+    position: fixed;
+    top: 150px;
+    right: 150px;
+  }
+  body main .about .content_container .about_me {
+    width: 50%;
+  }
+  body main .about .content_container .about_me .resume {
     margin: 75px 0px;
   }
 }
