@@ -269,7 +269,7 @@ body footer .copyright .content_container .copyright_date {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
   body main .projects_home_page .content_container .project_box img {
     width: 300px;
@@ -327,7 +327,8 @@ body footer .copyright .content_container .copyright_date {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0px 20px 20px;
+    margin: 0px auto 20px;
+    width: 80%;
     /* project box*/
   }
   body main .projects_home_page .content_container h1 {

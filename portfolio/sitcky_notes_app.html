@@ -58,7 +58,7 @@
 					<div class="project_info">
 						<h2>Overview</h2>
 						<p>The Super Sticky Notes app is an interactive app that allows users to create “sticky” notes
-                             on the computer to keep track of to-do items. React is using JSX to render app's UI and 
+                             on the computer to keep track of to-do items. React is using JSX to render the app's UI and 
                              mounting components to save the user’s items after they close the browser.
 						</p>
 					</div>
@@ -67,7 +67,7 @@
 						<p>
 							
 							The challenge I had was knowing how to edit 
-                            certain fields of the note, either the title or description.
+                            certain fields of the note, either the title or the description.
 
 						</p>
 					</div>
@@ -77,7 +77,7 @@
 
 							<br>But the actual makeup of the notes object has four key-value
                              pairs that are needed for it to be created: id, title, description 
-                             and doesMatchSearch.
+                             ,and doesMatchSearch.
 
 						</p>							
 
@@ -89,14 +89,14 @@
 
 							</p>
 
-                            <p><b>The solution to editing either or both the description and title 
-                                is by utilizing keys.</b> Keys like id’s are assigned as unique identifiers
+                            <p><b>The solution to editing either or both the description and/or title 
+                                is by utilizing keys.</b> Keys like ids are assigned as unique identifiers
                                  to elements.</p>
 
 							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_key_names.png"  alt="key names"> </figure>
 							
                             <p>In this case, two keys are created, “title” and “description”. These keys along with the note’s id are 
-                                sent to the editingNotes function that uses them to know if either title or description field need to 
+                                sent to the editingNotes function that uses them to know if either title or description field needs to 
                                 change.</p>
 
 
