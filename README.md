@@ -37,7 +37,7 @@ This is a overreview of my portfolio website
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Javascript
+- JavaScript
 
 ### What I learned
 
