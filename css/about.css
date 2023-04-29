@@ -61,26 +61,6 @@ body main .about .content_container .resume a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* .flex_this{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         flex-wrap: wrap;
-         margin: 20px auto;
-
-         .my_experiences, .education, .skills, .fun_fact{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         width: 48%;
-
-         p{
-             text-align: left;
-         }
-     }
-
-
-     }*/
   }
   .about .content_container .about_me h1 {
     font-size: 3em;
