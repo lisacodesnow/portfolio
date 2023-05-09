@@ -109,6 +109,10 @@ body main .hero .intro h1 {
   font-size: 3em;
   line-height: 1.5em;
 }
+body main .hero .intro h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
 body main .projects_home_page {
   display: flex;
   flex-direction: column;
@@ -121,7 +125,7 @@ body main .projects_home_page a {
   text-decoration: none;
 }
 body main .projects_home_page h1 {
-  margin: 0px 0px 80px;
+  margin: 80px 0px 80px;
   font-size: 2em;
 }
 body main .projects_home_page .project_box {
@@ -249,11 +253,14 @@ body footer .copyright .content_container .copyright_date {
   body main .hero .intro h1 {
     font-size: 4em;
   }
+  body main .hero .intro h2 {
+    font-size: 3em;
+  }
   body main .projects_home_page {
     /* content container*/
   }
   body main .projects_home_page h1 {
-    margin: 0px 0px 80px;
+    margin: 80px 0px 80px;
     font-size: 3em;
   }
   body main .projects_home_page .content_container {

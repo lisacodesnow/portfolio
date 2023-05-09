@@ -1,6 +1,12 @@
 body main .about .content_container figure {
   padding: 10px 0px;
 }
+body main .about .content_container figure figcaption {
+  text-align: center;
+  margin: 20px 0px 0px;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+}
 body main .about .content_container h1 {
   font-size: 2em;
   padding: 40px 0px;
