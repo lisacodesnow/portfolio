@@ -75,13 +75,15 @@
 							needed to have empty data models.</p>
 
 							<figure> <img src="../images/note_taking_app/note_taking_app_state_code.png"  alt="state code photo"> </figure>
-							<p>Utilizing event listeners and handlers is how I made
-								 the app interactive to display users' typed words.<br>
+							<p> <b>Utilizing event listeners and handlers is how I made
+								 the app interactive to display users' typed words.</b><br>
+
+								 <br>Event listeners listen for an event to happen, i.e. typing,
+									and the event handler is triggered once the text is typed or the button is hit. 
+									The event handler updates the state so the changes can be displayed on the screen.
 							</p>
-								<p>Event listeners listen for an event to happen, i.e. typing,
-								and the event handler is triggered once the text is typed or the button is hit. 
-								The event handler updates the state so the changes can be displayed on the screen.</p>
-								
+							
+							<figure><img src="../images/note_taking_app/note_taking_app_event_listener.png" alt="event listener photo"></figure>
 								<p>Two event listeners and handlers were used. The onChange and onSubmit listeners. And the updateChalk
 									and updateNotes event handlers.
 								</p>
@@ -94,13 +96,17 @@
 
 								
 								
-							<figure><img src="../images/note_taking_app/note_taking_app_event_listener.png" alt="event listener photo"></figure>
+							
 							<p>The two event handlers are functions that I created to update the state.</p>
 							
-								<p>The <b>updateChalk event handler</b> updates the “chalk” property empty string. This property is what is used to show the user's typed words.
+								<p>The <b>updateChalk event handler</b> updates the “chalk” property empty string. 
+									This property is what is used to show the user's typed words. <br>
+
+									<br>The <b>updateNotes event handler</b> updates the “notes” property empty array. 
+								The array collects all the notes typed and submitted.
 								</p>
-								<p>The <b>updateNotes event handler</b> updates the “notes” property empty array. The array collects all the notes typed and submitted.
-								</p>
+								
+								
 							
 							<figure> <img src="../images/note_taking_app/note_taking_app_updating_state.png"  alt="event handler photo"> </figure>
 							<p>To accomplish app interactivity for users to experience is the rewarding part of coding.
@@ -112,7 +118,8 @@
 							ES6,
 							JSX,
 							Managing data flow,
-							Manipulating the DOM
+							Manipulating the DOM, 
+							Responive Web Design
 						</h3>
 					</div>
 					<div class="project_tools">

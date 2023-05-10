@@ -35,8 +35,11 @@
   font-size: 3em;
   margin: 60px 0px;
 }
-.portfolio_pieces .challenge, .portfolio_pieces .solution, .portfolio_pieces .project_skills, .portfolio_pieces .project_tools {
+.portfolio_pieces .challenge, .portfolio_pieces .solution {
   margin: 100px 0px 0px;
+}
+.portfolio_pieces .project_skills, .portfolio_pieces .project_tools {
+  margin: 100px auto 0px;
 }
 .portfolio_pieces h2 {
   font-size: 2em;
@@ -81,6 +84,7 @@
   .individual_project_pages .content_container {
     width: 90%;
     margin: 0px auto 55px !important;
+    /*portfolio pieces end*/
   }
   .individual_project_pages .content_container .portfolio_pieces {
     /*solution end*/
@@ -119,7 +123,7 @@
     padding: 0px;
   }
   .individual_project_pages .content_container .portfolio_pieces .solution ul {
-    margin: 40px 0px;
+    margin: 40px 0px 0px 40px;
     padding: 0px;
   }
   .individual_project_pages .content_container .portfolio_pieces .solution figure {
@@ -143,6 +147,10 @@
   .individual_project_pages .content_container p {
     font-size: 1.25em;
     line-height: 1.5em;
+  }
+  .individual_project_pages .content_container .project_skills,
+  .individual_project_pages .content_container .project_tools {
+    width: 50%;
   }
   .individual_project_pages .content_container .live_page_button {
     justify-content: center;

@@ -73,31 +73,41 @@
 					</div>
 					<div class="solution">
 						<h2>Solution</h2>
-						<p>The physical note is divided between two input sections: the title, and description. <br>
+						<p>The physical note is divided between two input sections: the title, 
+							and description. <br>
 
 							<br>But the actual makeup of the notes object has four key-value
                              pairs that are needed for it to be created: id, title, description 
-                             ,and doesMatchSearch.
+                             ,and doesMatchSearch. <br>
+
+							 <br> The note's id is unique and is defined by the date of the note's creation. 
+							 While it's a good way to find a note that needs to be edited, the id alone 
+							 won’t allow me to edit the title and description field.
 
 						</p>							
 
 							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_keyvalue_pairs.png"  alt="key value pairs"> </figure>
 							
-                            <p>The note's id is unique and is defined by the date of the note's creation. 
-                                While it's a good way to find a note that needs to be edited, the id alone 
-                                won’t allow me to edit the title and description field.
-
-							</p>
-
-                            <p><b>The solution to editing either or both the description and/or title 
+							<p><b>The solution to editing either or both the description and/or title 
                                 is by utilizing keys.</b> Keys like ids are assigned as unique identifiers
                                  to elements.</p>
 
-							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_key_names.png"  alt="key names"> </figure>
 							
-                            <p>In this case, two keys are created, “title” and “description”. These keys along with the note’s id are 
-                                sent to the editingNotes function that uses them to know if either title or description field needs to 
-                                change.</p>
+							
+							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_key_names.png"  alt="key names"> </figure>
+                           
+							
+								
+								 
+								 <p>In this case, two keys are created, “title” and “description”. These keys
+								  along with the note’s id are sent to the editingNotes function that uses them to
+								   know if either title or description field needs to change.
+
+								</p>
+
+							
+							
+                        
 
 
 							<figure> <img src="../images/sitcky_notes_app/sticky_notes_app_sentto_function.png"  alt="keys sent to function"> </figure>
@@ -105,7 +115,7 @@
 					</div>
 					<div class="project_skills">
 						<h2>Skills</h2>
-						<h3> React, ES6, JSX, Managing data flow, Manipulating the DOM</h3>
+						<h3> React, ES6, JSX, Managing data flow, Manipulating the DOM, Responive Web Design</h3>
 					</div>
 					<div class="project_tools">
 						<h2> Tools</h2>

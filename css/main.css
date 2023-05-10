@@ -344,6 +344,7 @@ body footer .copyright .content_container .copyright_date {
   }
   body main .projects_home_page .content_container .project_box {
     flex-basis: 33%;
+    margin-bottom: 50px;
   }
   body main .projects_home_page .content_container .project_box .middle_text h2 {
     font-size: 1.5em;

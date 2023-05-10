@@ -11,21 +11,22 @@ body{
 
     .content_container{
         
+        h1{
+            font-size: 3em;
+            margin: 0px 0px 20px;
+        }
+        
 figure{
     padding:10px 0px;
 
     figcaption{
         text-align: center;
         margin: 20px 0px 0px;
-        font-size: 1.5em;
+        font-size: 1.25em;
         font-family:$paragraph-font ;
     }
 }
 
-h1{
-    font-size: 2em;
-    padding:40px 0px;
-}
 
 .intro_words{
 margin-top: -10px;
@@ -34,9 +35,13 @@ margin-top: -10px;
         text-decoration: none;
         color: $off-white-primary;
     }
+
+    h2{
+        margin-top: 40px;
+    }
 }
 
-.my_experiences, .education, .skills, .fun_fact{
+.my_experiences, .education, .skills, .tools, .fun_fact{
     margin-top: 80px;
 }
 h2{
@@ -107,10 +112,13 @@ a:hover{
         
         .intro_words,
         .skills,
+        .tools,
         .education,
         .my_experiences,
         .fun_fact{
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 60%;
         }
         
@@ -124,7 +132,7 @@ a:hover{
         
         p{
             margin: 40px 0px;
-            line-height: 1.25em;
+            line-height: 1.5em;
             font-size: 1.25em;
             
         }
@@ -132,7 +140,7 @@ a:hover{
         
         h3{
             margin: 40px 0px;
-            line-height: 1.25em;
+            line-height: 1.5em;
             font-size: 1.5em;
         }
         .resume{
@@ -167,7 +175,12 @@ main{
             
             align-items: flex-start;
             
-           
+           .meet_me{
+            display: flex;
+            align-items: center;
+            width:50%;
+            justify-content: center;
+           }
             figure{
                 width: 40%;
                 position: fixed;
@@ -185,11 +198,19 @@ main{
             }
 
         }
+
+        .intro_words,
+        .skills,
+        .tools,
+        .education,
+        .my_experiences,
+        .fun_fact{
+            display: block !important;
             }   
         
-    }
+    } /* content container end*/
  }
 
-
+}
 }
 }

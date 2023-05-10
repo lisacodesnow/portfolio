@@ -59,8 +59,13 @@ $paragraph-font: 'Raleway', sans-serif;
                     font-size: 3em;
                     margin:60px 0px;
                 }
-                .challenge, .solution, .project_skills,.project_tools{
+                .challenge, .solution{
                     margin:100px 0px 0px;
+                }
+
+                .project_skills,.project_tools{
+                    margin: 100px auto 0px;
+
                 }
 
                 h2{
@@ -146,10 +151,7 @@ $paragraph-font: 'Raleway', sans-serif;
         align-items: center;
         width: 50%;
         margin:auto;
-        p{
-            
-
-        }
+        
     }
     .solution{
         display: flex;
@@ -174,7 +176,7 @@ $paragraph-font: 'Raleway', sans-serif;
     }
 
         ul{
-            margin:40px 0px;
+            margin:40px 0px 0px 40px;
             padding:0px;
         }
 
@@ -186,34 +188,41 @@ $paragraph-font: 'Raleway', sans-serif;
 
     
 
-            }
-            h1{
-                font-size: 3.5em;
+} /*portfolio pieces end*/
+
+     h1{
+        font-size: 3.5em;
                 
-                text-align: center;
-                margin: 100px 0px;
+         text-align: center;
+        margin: 100px 0px;
                 
-            }
-            h2{
-                font-size: 2.5em;
-                width: 100%;
-                text-align: center;
-                margin: 40px 0px;
+         }
+    h2{
+     font-size: 2.5em;
+     width: 100%;
+     text-align: center;
+     margin: 40px 0px;
                 
                
-            }
-            h3{
-                font-size: 1.25em;
-                text-align: center;
+     }
+    h3{
+        font-size: 1.25em;
+      text-align: center;
                
                 
-            }
-            p{
+     }
+    p{
               
-                font-size: 1.25em;
-                line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 1.5em;
                 
-            }
+     }       
+    
+     .project_skills,
+     .project_tools{
+        width: 50%;
+       
+     }
             
           .live_page_button{
 

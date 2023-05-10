@@ -1,15 +1,15 @@
+body main .about .content_container h1 {
+  font-size: 3em;
+  margin: 0px 0px 20px;
+}
 body main .about .content_container figure {
   padding: 10px 0px;
 }
 body main .about .content_container figure figcaption {
   text-align: center;
   margin: 20px 0px 0px;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: "Raleway", sans-serif;
-}
-body main .about .content_container h1 {
-  font-size: 2em;
-  padding: 40px 0px;
 }
 body main .about .content_container .intro_words {
   margin-top: -10px;
@@ -18,7 +18,10 @@ body main .about .content_container .intro_words a {
   text-decoration: none;
   color: #F2F2F2;
 }
-body main .about .content_container .my_experiences, body main .about .content_container .education, body main .about .content_container .skills, body main .about .content_container .fun_fact {
+body main .about .content_container .intro_words h2 {
+  margin-top: 40px;
+}
+body main .about .content_container .my_experiences, body main .about .content_container .education, body main .about .content_container .skills, body main .about .content_container .tools, body main .about .content_container .fun_fact {
   margin-top: 80px;
 }
 body main .about .content_container h2 {
@@ -75,9 +78,13 @@ body main .about .content_container .resume a:hover {
   }
   .about .content_container .about_me .intro_words,
   .about .content_container .about_me .skills,
+  .about .content_container .about_me .tools,
   .about .content_container .about_me .education,
   .about .content_container .about_me .my_experiences,
   .about .content_container .about_me .fun_fact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
   }
   .about .content_container .about_me h2 {
@@ -89,12 +96,12 @@ body main .about .content_container .resume a:hover {
   }
   .about .content_container .about_me p {
     margin: 40px 0px;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-size: 1.25em;
   }
   .about .content_container .about_me h3 {
     margin: 40px 0px;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-size: 1.5em;
   }
   .about .content_container .about_me .resume {
@@ -114,8 +121,17 @@ body main .about .content_container .resume a:hover {
   }
 }
 @media screen and (min-width: 1024px) {
+  body main .about {
+    /* content container end*/
+  }
   body main .about .content_container {
     align-items: flex-start;
+  }
+  body main .about .content_container .meet_me {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
   }
   body main .about .content_container figure {
     width: 40%;
@@ -129,5 +145,13 @@ body main .about .content_container .resume a:hover {
   }
   body main .about .content_container .about_me .resume {
     margin: 30px 0px;
+  }
+  body main .about .content_container .intro_words,
+  body main .about .content_container .skills,
+  body main .about .content_container .tools,
+  body main .about .content_container .education,
+  body main .about .content_container .my_experiences,
+  body main .about .content_container .fun_fact {
+    display: block !important;
   }
 }
