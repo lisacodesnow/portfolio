@@ -206,12 +206,34 @@ main{
 			line-height: 1.5em;
 			width: 75%;
 		}
+		
+			
+		.case_study{
+			padding: 20px;
+            border-radius: 50px;
+            background-color: $off-white-primary;
+            text-align: center;
+			margin-bottom: 20px;
+
+			a{
+			color: $accent-blue;
+			width: 50%;
+			}
+		}
+
+		.case_study:hover{
+			background-color: $accent-blue;
+		}
+
+		.case_study:hover a{
+			color: $off-white-primary
+		}
 
 		.live_page{
 			padding: 20px;
-                    border-radius: 50px;
-                    background-color: $accent-blue;
-                    text-align: center;
+            border-radius: 50px;
+            background-color: $accent-blue;
+            text-align: center;
                    
 		}
 
@@ -222,6 +244,7 @@ main{
 		.live_page:hover a{
 		   color: $accent-blue;
 		}
+	
 		
 		} /* project box*/
 		
@@ -470,7 +493,7 @@ body{
 			.project_box{
 
 				flex-basis: 33%;
-				margin-bottom: 50px;;
+				margin-bottom: 75px;;
 				
 			.middle_text{
 			h2{
